@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agenten &amp; Harnesses – sdw Alumni</title>
+<style>
+  /* ---------- sdw Alumni CI (gold + teal, hell) ---------- */
+  :root{
+    --gold:#f7c600; --gold-d:#c89a00;        /* Primär-Akzent (CTA, Bracket) */
+    --teal:#5aa7bb; --teal-d:#357f97;        /* Nav-/Sektions-Akzent */
+    --blue:#1b7fa3;                          /* Logo-Blau */
+    --ink:#1d1d1b; --muted:#5b6b73;
+    --line:#e2e8ea; --paper:#f6f9fa; --soft:#eef5f7; --white:#fff;
+    --good:#2e9e6b; --bad:#c0392b;
+    --shadow:0 14px 40px rgba(20,40,50,.12);
+    --font:"Segoe UI","Helvetica Neue",Arial,system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{font-family:var(--font);background:var(--paper);color:var(--ink);overflow:hidden;}
+
+  .deck{position:fixed;inset:0;}
+  .slide{position:absolute;inset:0;display:flex;flex-direction:column;padding:6vh 7vw;
+    background:var(--white);
+    opacity:0;visibility:hidden;transform:translateY(16px);
+    transition:opacity .4s ease,transform .4s ease,visibility .4s;overflow:hidden;}
+  .slide.active{opacity:1;visibility:visible;transform:none;}
+
+  .kicker{display:inline-block;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-d);font-weight:800;margin-bottom:.7rem;}
+  h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.05;color:var(--ink);font-weight:800;letter-spacing:-.5px;}
+  h2{font-size:clamp(1.7rem,3.4vw,2.7rem);color:var(--ink);font-weight:800;letter-spacing:-.4px;margin-bottom:1.1rem;}
+  h3{font-size:1.18rem;color:var(--teal-d);font-weight:800;margin-bottom:.45rem;}
+  p,li{font-size:clamp(.98rem,1.45vw,1.3rem);line-height:1.5;color:var(--ink);}
+  .lead{font-size:clamp(1.1rem,1.8vw,1.5rem);color:var(--muted);max-width:46ch;}
+  strong{color:var(--ink);font-weight:800;} .em{color:var(--teal-d);font-weight:800;}
+
+  ul.clean{list-style:none;display:flex;flex-direction:column;gap:.85rem;margin-top:.4rem;}
+  ul.clean li{display:flex;gap:.8rem;align-items:flex-start;}
+  ul.clean li::before{content:"";flex:0 0 auto;width:.8rem;height:.8rem;margin-top:.45rem;border-radius:2px;background:var(--gold);}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:3vw;align-items:center;flex:1;min-height:0;}
+  .grid-title{flex:0 0 auto;}
+  .center{align-items:center;justify-content:center;text-align:center;}
+  .fill{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;}
+
+  .card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:1.4rem 1.6rem;box-shadow:0 6px 22px rgba(20,40,50,.06);}
+  .card h3{margin-bottom:.5rem;}
+  .pill{display:inline-block;background:var(--gold);color:var(--ink);font-weight:800;font-size:.82rem;padding:.34rem .85rem;border-radius:999px;letter-spacing:.02em;}
+
+  .topbar{position:fixed;top:0;left:0;right:0;height:5px;background:var(--soft);z-index:50;}
+  .topbar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--teal));transition:width .4s;}
+
+  /* Logo */
+  .logo{height:56px;width:auto;display:block;}
+  .brand{position:fixed;top:16px;right:7vw;z-index:40;background:rgba(255,255,255,.96);
+    padding:8px 14px;border-radius:12px;box-shadow:0 4px 16px rgba(20,40,50,.12);}
+  .logo-hero{height:120px;width:auto;display:block;margin-bottom:1.4rem;}
+  body.hide-brand .brand{display:none;}
+  .counter{position:fixed;bottom:18px;right:7vw;z-index:40;font-size:.82rem;color:var(--muted);font-weight:700;}
+  .hint{position:fixed;bottom:18px;left:7vw;z-index:40;font-size:.74rem;color:var(--muted);}
+  .hint kbd{background:#fff;border:1px solid var(--line);border-radius:6px;padding:.1rem .4rem;font-size:.7rem;}
+
+  /* gold bracket motif (sdw hero) */
+  .bracket{position:relative;display:inline-block;padding:1.4rem 0 0 1.6rem;}
+  .bracket::before{content:"";position:absolute;left:0;top:0;width:64px;height:64px;
+    border-left:6px solid var(--gold);border-top:6px solid var(--gold);}
+
+  /* teal section tint for hero/hackathon */
+  .tint{background:linear-gradient(135deg,#eaf4f7,#f6f9fa);}
+  .tint-strong{background:linear-gradient(135deg,#dcedf1,#eef5f7);}
+
+  .box{border-radius:13px;padding:.9rem 1.1rem;font-weight:800;text-align:center;border:2px solid var(--line);background:#fff;color:var(--ink);}
+  .box.brain{border-color:var(--blue);color:var(--blue);}
+  .box.harness{border-color:var(--teal);color:var(--teal-d);}
+  .box.acc{border-color:var(--gold-d);color:var(--gold-d);background:#fffbe9;}
+  .flow{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;justify-content:center;}
+  .arrow{font-size:1.8rem;color:var(--gold-d);}
+
+  .loop{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;width:100%;}
+  .loop .step{position:relative;}
+  .loop .step .num{position:absolute;top:-14px;left:-10px;width:32px;height:32px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-weight:800;box-shadow:var(--shadow);}
+
+  table{border-collapse:collapse;width:100%;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);}
+  th,td{padding:.85rem 1.1rem;text-align:left;border-bottom:1px solid var(--line);font-size:clamp(.9rem,1.25vw,1.15rem);}
+  thead th{background:var(--teal);color:#fff;font-weight:800;} thead th:first-child{background:var(--teal-d);}
+  tbody td:first-child{font-weight:800;color:var(--muted);}
+  .yes{color:var(--good);font-weight:800;} .no{color:var(--bad);font-weight:800;}
+
+  .row3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:.8rem;}
+  .row3 .card{border-top:5px solid var(--teal);}
+
+  /* context window bars */
+  .ctx-wrap{display:flex;gap:3vw;justify-content:flex-start;align-items:flex-end;width:100%;}
+  .ctx{width:220px;}
+  .win{height:320px;border:3px solid var(--line);border-radius:14px;background:#fff;display:flex;flex-direction:column-reverse;overflow:hidden;position:relative;box-shadow:var(--shadow);}
+  .win .seg{padding:.32rem .6rem;font-size:.76rem;font-weight:800;color:#fff;text-align:center;}
+  .win.full .over{position:absolute;top:-2px;left:-2px;right:-2px;height:28px;background:repeating-linear-gradient(45deg,var(--bad),var(--bad) 8px,#e74c3c 8px,#e74c3c 16px);color:#fff;display:grid;place-items:center;font-size:.72rem;font-weight:800;}
+  .ctx .cap{text-align:center;margin-top:.6rem;font-weight:800;}
+  .ctx .sub{text-align:center;color:var(--muted);font-size:.88rem;}
+
+  /* subagent isolation / parallel */
+  .iso{display:flex;align-items:center;gap:1.4rem;width:100%;justify-content:center;flex-wrap:wrap;}
+  .agent{border-radius:16px;padding:1.1rem;width:260px;box-shadow:var(--shadow);background:#fff;border:2px solid var(--line);}
+  .agent.main{border-color:var(--ink);}
+  .agent.sub{border-color:var(--teal);}
+  .agent h4{font-size:1rem;color:var(--ink);margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem;}
+  .agent.sub h4{color:var(--teal-d);}
+  .ctxbar{height:14px;border-radius:7px;background:var(--soft);overflow:hidden;border:1px solid var(--line);}
+  .ctxbar>i{display:block;height:100%;}
+  .lean>i{width:22%;background:var(--good);}
+  .heavy>i{width:88%;background:var(--gold-d);}
+  .agent small{display:block;margin-top:.4rem;color:var(--muted);font-size:.8rem;}
+  .conn{display:flex;flex-direction:column;align-items:center;gap:.3rem;color:var(--muted);font-weight:800;font-size:.82rem;}
+  .conn .a1{color:var(--teal-d);} .conn .a2{color:var(--good);}
+
+  .fan{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;width:100%;margin-top:.4rem;}
+  .fan .agent{width:auto;}
+
+  .timeline{display:flex;gap:0;margin-top:1.3rem;}
+  .timeline .t{flex:1;text-align:center;position:relative;padding-top:24px;}
+  .timeline .t::before{content:"";position:absolute;top:7px;left:0;right:0;height:3px;background:var(--line);}
+  .timeline .t .d{position:absolute;top:0;left:50%;transform:translateX(-50%);width:16px;height:16px;border-radius:50%;background:var(--gold);}
+  .timeline .t b{display:block;color:var(--ink);font-size:1rem;} .timeline .t span{font-size:.82rem;color:var(--muted);}
+
+  .opt{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:1.3rem;}
+  .opt .card{border-top:5px solid var(--gold);}
+
+  svg text{font-family:var(--font);}
+</style>
+</head>
+<body>
+<div class="topbar"><i id="bar"></i></div>
+<div class="brand">
+  <img class="logo" src="assets/sdw-alumni-logo.png" alt="sdw Alumni" />
+</div>
+<div class="counter"><span id="cur">1</span> / <span id="tot">1</span></div>
+<div class="hint">Navigation: <kbd>→</kbd> <kbd>←</kbd> · <kbd>F</kbd> Vollbild</div>
+
+<div class="deck" id="deck">
+
+  <!-- 1 Titel -->
+  <section class="slide center tint" id="s-title">
+    <div class="bracket" style="max-width:64ch;text-align:left;">
+      <img class="logo-hero" src="assets/sdw-alumni-logo.png" alt="sdw Alumni" />
+      <span class="kicker">KI verstehen · Hands-on</span>
+      <h1>Agenten &amp; Harnesses</h1>
+      <p class="lead" style="margin-top:1.2rem;">Wie aus einem Sprachmodell ein handelnder Assistent wird – und warum das „Drumherum" oft wichtiger ist als das Modell selbst.</p>
+      <p style="margin-top:2rem;color:var(--muted);font-size:1rem;font-weight:700;">Workshop &amp; Mini-Hackathon · sdw Alumni</p>
+    </div>
+  </section>
+
+  <!-- 2 Was ist ein Harness (zusammengeführt) -->
+  <section class="slide" id="s-harness">
+    <div class="grid-title"><span class="kicker">Der Kern</span><h2>Was ist ein Harness?</h2></div>
+    <div class="fill">
+      <div class="flow" style="gap:1.2rem;">
+        <div class="card" style="flex:1;min-width:220px;border-top:5px solid var(--blue);">
+          <div style="font-size:2.4rem;">🧠</div>
+          <h3 style="color:var(--blue);">LLM · das Gehirn</h3>
+          <p>Sagt nur das nächste Wort voraus. Kann <strong>denken &amp; reden</strong> – aber nichts anfassen: keine Dateien, kein Web, keine Aktionen.</p>
+        </div>
+        <div class="arrow">＋</div>
+        <div class="card" style="flex:1;min-width:220px;border-top:5px solid var(--teal);">
+          <div style="font-size:2.4rem;">🦾</div>
+          <h3>Harness · der Körper</h3>
+          <p>Die Software <strong>um</strong> das Modell: gibt ihm <strong>Werkzeuge</strong> (lesen, schreiben, ausführen, suchen) und eine <strong>Schleife</strong>, die alles steuert.</p>
+        </div>
+        <div class="arrow">＝</div>
+        <div class="card" style="flex:1;min-width:220px;border-top:5px solid var(--gold-d);background:#fffbe9;">
+          <div style="font-size:2.4rem;">🤖</div>
+          <h3 style="color:var(--gold-d);">Agent · handelt</h3>
+          <p>Denkt <strong>und</strong> handelt. Bekommt ein Ziel und <strong>erledigt</strong> die Aufgabe selbstständig, Schritt für Schritt.</p>
+        </div>
+      </div>
+      <p style="margin-top:1.8rem;text-align:center;max-width:80ch;margin-left:auto;margin-right:auto;color:var(--muted);">
+        Das Modell bleibt gleich – <strong>das Drumherum macht den Unterschied.</strong> Genau dieses Drumherum ist der Harness (z. B. Claude Code, Codex, pi).
+      </p>
+    </div>
+  </section>
+
+  <!-- 3 Schichtenmodell (nested) -->
+  <section class="slide" id="s-layers">
+    <div class="grid-title"><span class="kicker">Das große Bild · Was baut worauf auf</span><h2>Die Schichten eines Agenten</h2></div>
+    <div class="fill" style="align-items:center;">
+      <svg width="min(90vw,1000px)" height="60vh" viewBox="0 0 1000 520" preserveAspectRatio="xMidYMid meet">
+        <rect x="20" y="20" width="960" height="480" rx="22" fill="#fbfdfe" stroke="#aab9bf" stroke-width="2.5" stroke-dasharray="7 6"/>
+        <text x="44" y="52" font-size="20" font-weight="800" fill="#5b6b73">DIE WELT · Dateien · Web · Terminal · APIs</text>
+        <rect x="70" y="80" width="860" height="400" rx="20" fill="#eaf4f7" stroke="#5aa7bb" stroke-width="3"/>
+        <text x="94" y="112" font-size="20" font-weight="800" fill="#357f97">HARNESS · Schleife · Werkzeuge · Speicher · Sandbox</text>
+        <rect x="140" y="140" width="720" height="300" rx="18" fill="#fff7d6" stroke="#c89a00" stroke-width="2.5"/>
+        <text x="164" y="172" font-size="19" font-weight="800" fill="#a07d00">KONTEXTFENSTER · Auftrag · Verlauf · Werkzeug-Definitionen</text>
+        <rect x="370" y="250" width="260" height="120" rx="16" fill="#1d1d1b"/>
+        <text x="500" y="305" font-size="34" text-anchor="middle">🧠</text>
+        <text x="500" y="345" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">LLM</text>
+        <g stroke="#c89a00" stroke-width="3" fill="#c89a00">
+          <line x1="912" y1="450" x2="912" y2="118" />
+          <polygon points="912,102 904,122 920,122"/>
+        </g>
+        <text x="940" y="300" font-size="16" font-weight="800" fill="#a07d00" transform="rotate(90 940 300)">baut auf →</text>
+      </svg>
+      <p style="margin-top:.5rem;text-align:center;color:var(--muted);">Jede Schicht <strong>umschließt</strong> die innere und gibt ihr mehr Fähigkeiten.</p>
+    </div>
+  </section>
+
+  <!-- 4 Mindmap Bestandteile -->
+  <section class="slide" id="s-mindmap">
+    <div class="grid-title"><span class="kicker">Aufbau</span><h2>Was steckt in einem Harness?</h2></div>
+    <div class="fill center">
+      <svg width="min(92vw,1000px)" height="58vh" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet">
+        <g stroke="#cfdde1" stroke-width="3" fill="none">
+          <line x1="500" y1="250" x2="225" y2="95"/><line x1="500" y1="250" x2="775" y2="95"/>
+          <line x1="500" y1="250" x2="150" y2="250"/><line x1="500" y1="250" x2="850" y2="250"/>
+          <line x1="500" y1="250" x2="240" y2="410"/><line x1="500" y1="250" x2="760" y2="410"/>
+        </g>
+        <circle cx="500" cy="250" r="78" fill="#1d1d1b"/>
+        <text x="500" y="244" text-anchor="middle" font-size="30">🦾</text>
+        <text x="500" y="282" text-anchor="middle" font-size="21" font-weight="800" fill="#fff">HARNESS</text>
+        <g font-weight="800" fill="#1d1d1b">
+          <g><rect x="95" y="58" width="260" height="72" rx="14" fill="#fff" stroke="#5aa7bb" stroke-width="2.5"/><text x="225" y="92" text-anchor="middle" font-size="17">🧰 Werkzeuge (Tools)</text><text x="225" y="114" text-anchor="middle" font-size="13" fill="#5b6b73">lesen, schreiben, suchen…</text></g>
+          <g><rect x="645" y="58" width="260" height="72" rx="14" fill="#fff" stroke="#5aa7bb" stroke-width="2.5"/><text x="775" y="92" text-anchor="middle" font-size="17">🔄 Planungs-Schleife</text><text x="775" y="114" text-anchor="middle" font-size="13" fill="#5b6b73">denken→handeln→prüfen</text></g>
+          <g><rect x="20" y="214" width="240" height="72" rx="14" fill="#fff" stroke="#5aa7bb" stroke-width="2.5"/><text x="140" y="248" text-anchor="middle" font-size="17">🧹 Kontext-Mgmt.</text><text x="140" y="270" text-anchor="middle" font-size="13" fill="#5b6b73">Platz sauber halten</text></g>
+          <g><rect x="740" y="214" width="240" height="72" rx="14" fill="#fff" stroke="#5aa7bb" stroke-width="2.5"/><text x="860" y="248" text-anchor="middle" font-size="17">💾 Speicher</text><text x="860" y="270" text-anchor="middle" font-size="13" fill="#5b6b73">Dateien &amp; Gedächtnis</text></g>
+          <g><rect x="110" y="376" width="260" height="72" rx="14" fill="#fff" stroke="#5aa7bb" stroke-width="2.5"/><text x="240" y="410" text-anchor="middle" font-size="17">🛡️ Sandbox</text><text x="240" y="432" text-anchor="middle" font-size="13" fill="#5b6b73">sicher ausführen</text></g>
+          <g><rect x="630" y="376" width="280" height="72" rx="14" fill="#fff" stroke="#c89a00" stroke-width="3"/><text x="770" y="410" text-anchor="middle" font-size="17">🧑‍🤝‍🧑 Orchestrierung</text><text x="770" y="432" text-anchor="middle" font-size="13" fill="#5b6b73">Subagenten &amp; Teams</text></g>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 5 Schleife -->
+  <section class="slide" id="s-loop">
+    <div class="grid-title"><span class="kicker">So arbeitet er</span><h2>Die Agenten-Schleife (ReAct)</h2></div>
+    <p class="lead" style="max-width:none;margin-bottom:1.6rem;">Nicht alles in einem Schritt – der Agent arbeitet in einer Schleife, bis das Ziel erreicht ist.</p>
+    <div class="loop">
+      <div class="step card"><span class="num">1</span><h3>Denken</h3><p>Was ist das Ziel? Was ist der nächste sinnvolle Schritt?</p></div>
+      <div class="step card"><span class="num">2</span><h3>Handeln</h3><p>Ein Werkzeug nutzen: Datei lesen, Befehl ausführen, suchen.</p></div>
+      <div class="step card"><span class="num">3</span><h3>Beobachten</h3><p>Ergebnis ansehen: Hat es geklappt? Gab es einen Fehler?</p></div>
+      <div class="step card"><span class="num">4</span><h3>Wiederholen</h3><p>Plan anpassen und weiter – bis die Aufgabe fertig ist. ↻</p></div>
+    </div>
+    <p style="margin-top:1.6rem;text-align:center;"><strong>Denken → Handeln → Beobachten → wiederholen.</strong> Das Herz jedes Agenten.</p>
+  </section>
+
+  <!-- 6 Kontext-Problem -->
+  <section class="slide" id="s-bloat">
+    <div class="grid-title"><span class="kicker">Das Kernproblem</span><h2>Der Kontext läuft voll</h2></div>
+    <div class="grid2" style="grid-template-columns:1.05fr .95fr;">
+      <div class="ctx-wrap">
+        <div class="ctx">
+          <div class="win">
+            <div class="seg" style="background:#357f97;flex:0 0 18%;">Auftrag</div>
+            <div class="seg" style="background:#5aa7bb;flex:0 0 22%;">Verlauf</div>
+            <div class="seg" style="background:#86c0d0;flex:0 0 16%;">1 Werkzeug</div>
+          </div>
+          <div class="cap" style="color:var(--good);">Schlank ✓</div>
+          <div class="sub">schnell &amp; präzise</div>
+        </div>
+        <div class="ctx">
+          <div class="win full">
+            <div class="over">⚠ läuft über</div>
+            <div class="seg" style="background:#357f97;flex:0 0 10%;">Auftrag</div>
+            <div class="seg" style="background:#5aa7bb;flex:0 0 14%;">Verlauf</div>
+            <div class="seg" style="background:#86c0d0;flex:0 0 16%;">Tool-Ausgaben</div>
+            <div class="seg" style="background:#a9cdd9;flex:0 0 18%;">Suchergebnisse</div>
+            <div class="seg" style="background:#c7dde4;color:#33444f;flex:0 0 16%;">Fehlversuche</div>
+            <div class="seg" style="background:#dceaef;color:#33444f;flex:0 0 20%;">altes Zeug …</div>
+            <div class="seg" style="background:#c89a00;flex:0 0 14%;">Überlauf</div>
+          </div>
+          <div class="cap" style="color:var(--bad);">Vollgelaufen ✗</div>
+          <div class="sub">langsam &amp; ungenau</div>
+        </div>
+      </div>
+      <div>
+        <p>Das <strong>Kontextfenster</strong> ist der Arbeitsspeicher des Agenten – und er ist <strong>begrenzt</strong>.</p>
+        <ul class="clean" style="margin-top:.9rem;">
+          <li><span>Jeder Schritt schiebt mehr hinein: Tool-Ausgaben, Suchtreffer, Irrwege.</span></li>
+          <li><span>Je voller, desto <em class="em">langsamer, teurer und ungenauer</em>.</span></li>
+          <li><span>Das Wichtige geht im Rauschen unter („lost in the middle").</span></li>
+        </ul>
+        <p style="margin-top:1.1rem;"><strong>Gute Harnesses halten den Kontext bewusst sauber.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 Subagenten isolieren -->
+  <section class="slide" id="s-sub">
+    <div class="grid-title"><span class="kicker">Die Lösung</span><h2>Subagenten isolieren den Kontext</h2></div>
+    <div class="fill">
+      <div class="iso">
+        <div class="agent main">
+          <h4>🧭 Haupt-Agent</h4>
+          <div class="ctxbar lean"><i></i></div>
+          <small>bleibt schlank &amp; behält den Überblick</small>
+        </div>
+        <div class="conn">
+          <span class="a1">— delegiert Aufgabe →</span>
+          <span class="arrow" style="font-size:1.4rem;color:var(--muted);">⇄</span>
+          <span class="a2">← nur die Zusammenfassung —</span>
+        </div>
+        <div class="agent sub">
+          <h4>🔬 Subagent</h4>
+          <div class="ctxbar heavy"><i></i></div>
+          <small>wühlt sich durch 50 Dateien – <strong>im eigenen, separaten Kontext</strong></small>
+        </div>
+      </div>
+      <p style="margin-top:1.8rem;text-align:center;max-width:72ch;margin-left:auto;margin-right:auto;color:var(--muted);">
+        Der Subagent macht die „schmutzige" Arbeit mit eigenem, frischem Kontextfenster. Zum Haupt-Agenten kommt <strong>nur das Ergebnis</strong> zurück – nicht der ganze Wust. So bleibt der Haupt-Thread sauber.
+      </p>
+    </div>
+  </section>
+
+  <!-- 8 Parallelisierung -->
+  <section class="slide" id="s-parallel">
+    <div class="grid-title"><span class="kicker">Tempo</span><h2>Mehrere Subagenten arbeiten parallel</h2></div>
+    <div class="fill">
+      <div style="display:flex;justify-content:center;margin-bottom:.6rem;">
+        <div class="agent main" style="width:300px;text-align:center;"><h4 style="justify-content:center;">🧭 Haupt-Agent</h4><small style="text-align:center;">verteilt &amp; fügt zusammen</small></div>
+      </div>
+      <div class="flow" style="margin:.2rem 0 1rem;"><span class="arrow">↙ &nbsp;&nbsp; ↓ &nbsp;&nbsp; ↘</span></div>
+      <div class="fan">
+        <div class="agent sub"><h4>🔎 Subagent A</h4><small>recherchiert Initiativen</small></div>
+        <div class="agent sub"><h4>🎨 Subagent B</h4><small>baut das Frontend</small></div>
+        <div class="agent sub"><h4>✍️ Subagent C</h4><small>schreibt die Texte</small></div>
+      </div>
+      <p style="margin-top:1.5rem;text-align:center;">
+        <span class="pill" style="background:#dff3e9;color:var(--good);">gleichzeitig statt nacheinander</span>
+        &nbsp; → &nbsp; <strong>schneller</strong>, und jeder Strang bleibt <strong>fokussiert &amp; sauber</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- 9 Praxis -->
+  <section class="slide" id="s-tools">
+    <div class="grid-title"><span class="kicker">In der Praxis</span><h2>Bekannte Harnesses</h2></div>
+    <div class="row3">
+      <div class="card"><h3>Claude Code (CLI)</h3><p>Läuft im Terminal. Liest &amp; schreibt eure Dateien, führt Befehle aus, baut ganze Projekte – mit Subagenten &amp; Skills.</p></div>
+      <div class="card"><h3>Codex</h3><p>OpenAIs Coding-Agent – gleiches Prinzip: ein Modell mit Werkzeugen, das Code-Aufgaben eigenständig erledigt.</p></div>
+      <div class="card"><h3>pi</h3><p>Ein weiterer Agenten-Harness. Anderes Gewand, gleiche Idee: Modell + Werkzeuge + Schleife.</p></div>
+    </div>
+    <p style="margin-top:1.6rem;text-align:center;color:var(--muted);">Unterschiedliche Marken – <strong>dasselbe Grundprinzip.</strong> Wer das Prinzip versteht, versteht alle.</p>
+  </section>
+
+  <!-- 10 Vergleich -->
+  <section class="slide" id="s-compare">
+    <div class="grid-title"><span class="kicker">Der Unterschied auf einen Blick</span><h2>Chat-LLM vs. Harness / Agent</h2></div>
+    <table>
+      <thead><tr><th>Fähigkeit</th><th>Rohes LLM (Chatfenster)</th><th>Harness / Agent</th></tr></thead>
+      <tbody>
+        <tr><td>Text &amp; Ideen liefern</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>Dateien lesen &amp; schreiben</td><td><span class="no">✗</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>Befehle / Programme ausführen</td><td><span class="no">✗</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>Mehrere Schritte selbst planen</td><td><span class="no">✗</span></td><td><span class="yes">✓</span> Schleife</td></tr>
+        <tr><td>Kontext sauber halten</td><td><span class="no">✗</span> läuft voll</td><td><span class="yes">✓</span> Subagenten</td></tr>
+        <tr><td>Ergebnis statt Anleitung</td><td>beschreibt nur</td><td><span class="yes">erledigt es</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 11 Skills 1 -->
+  <section class="slide" id="s-skill1">
+    <div class="grid-title"><span class="kicker">Mehr Können</span><h2>Was sind Skills?</h2></div>
+    <div class="grid2">
+      <div>
+        <p>Ein <strong>Skill</strong> ist eine wiederverwendbare <em class="em">Anleitung + Werkzeug-Paket</em> für eine bestimmte Aufgabe.</p>
+        <p style="margin-top:1rem;">Statt jedes Mal alles neu zu erklären, holt der Agent bei Bedarf das passende „Rezept" hervor.</p>
+        <p style="margin-top:1rem;">Vergleich: ein Praktikant mit einer <strong>Mappe voller Standard-Abläufe</strong> – „So legst du ein Event an", „So schreibst du einen Newsletter".</p>
+      </div>
+      <div class="card center" style="display:flex;flex-direction:column;gap:.9rem;border-top:5px solid var(--gold);">
+        <div style="font-size:3rem;">📒</div>
+        <h3 style="margin:0;">Ein Skill enthält</h3>
+        <p style="color:var(--muted);"><strong>Wann</strong> einsetzen · <strong>Wie</strong> vorgehen · <strong>welche Werkzeuge</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 Skills 2 -->
+  <section class="slide" id="s-skill2">
+    <div class="grid-title"><span class="kicker">So funktioniert's</span><h2>Skills machen Agenten verlässlich</h2></div>
+    <div class="flow" style="margin:.4rem 0 1.6rem;">
+      <div class="box">🗣️ Anfrage<br><span style="font-weight:400;font-size:.82rem;color:var(--muted)">„Lege ein neues Event an"</span></div>
+      <span class="arrow">→</span>
+      <div class="box harness">🔎 passenden Skill wählen</div>
+      <span class="arrow">→</span>
+      <div class="box brain">📒 Rezept befolgen</div>
+      <span class="arrow">→</span>
+      <div class="box acc">✅ konsistentes Ergebnis</div>
+    </div>
+    <div class="row3">
+      <div class="card"><h3>Wiederverwendbar</h3><p>Einmal definiert, immer wieder nutzbar – vom ganzen Team.</p></div>
+      <div class="card"><h3>Konsistent</h3><p>Gleiche Aufgabe, gleiche Qualität – nicht jedes Mal neu raten.</p></div>
+      <div class="card"><h3>Erweiterbar</h3><p>Neue Skills = neue Fähigkeiten, ohne das Modell zu ändern.</p></div>
+    </div>
+  </section>
+
+  <!-- 13 Zusammenfassung -->
+  <section class="slide center" id="s-recap">
+    <span class="kicker">Merksätze</span>
+    <h2>Alles zusammen</h2>
+    <div class="grid2" style="grid-template-columns:1fr 1fr;margin-top:.6rem;max-width:1040px;gap:1.2rem;">
+      <div class="card" style="border-left:5px solid var(--blue);"><h3 style="color:var(--blue);">🧠 LLM</h3><p>Das Gehirn. Denkt in Text, kann aber nichts anfassen.</p></div>
+      <div class="card" style="border-left:5px solid var(--teal);"><h3>🦾 Harness</h3><p>Der Körper: Augen, Hände, Werkzeuge + die Schleife.</p></div>
+      <div class="card" style="border-left:5px solid var(--gold);"><h3 style="color:var(--gold-d);">🧑‍🤝‍🧑 Subagenten</h3><p>Halten Kontext sauber &amp; arbeiten parallel.</p></div>
+      <div class="card" style="border-left:5px solid var(--ink);"><h3 style="color:var(--ink);">📒 Skills</h3><p>Rezepte, die den Agenten in Aufgaben verlässlich machen.</p></div>
+    </div>
+  </section>
+
+  <!-- 14 Hackathon Kickoff -->
+  <section class="slide center tint-strong" id="s-hack">
+    <div class="bracket" style="text-align:left;max-width:62ch;">
+      <span class="kicker">Jetzt seid ihr dran 🚀</span>
+      <h1>Mini-Hackathon</h1>
+      <p class="lead" style="margin-top:1.1rem;">Nutzt einen Agenten (z. B. Claude Code), um in kurzer Zeit etwas Echtes fürs Gemeinwohl zu bauen.</p>
+    </div>
+  </section>
+
+  <!-- 15 Aufgabe -->
+  <section class="slide tint" id="s-hack-task">
+    <div class="grid-title"><span class="kicker">Die Aufgabe</span><h2>Wählt euer Projekt</h2></div>
+    <div class="opt">
+      <div class="card"><h3 style="color:var(--gold-d);">Option A · Engagement-Portal</h3><p>Baut eine Website, die hilft, <strong>Wege zum sozialen Engagement</strong> zu entdecken: Initiativen finden, nach Thema/Ort filtern, Mitmach-Möglichkeiten zeigen.</p></div>
+      <div class="card"><h3 style="color:var(--gold-d);">Option B · Initiative-Website</h3><p>Baut die Website für eine <strong>soziale Initiative eurer Wahl</strong>: Mission, Mitmachen, Spenden, Kontakt – fertig zum Vorzeigen.</p></div>
+    </div>
+    <p style="margin-top:1.3rem;text-align:center;color:var(--muted);">Echtes Thema, echtes Ergebnis – am Ende kurz vorstellen.</p>
+  </section>
+
+  <!-- 16 Ablauf -->
+  <section class="slide tint" id="s-hack-plan">
+    <div class="grid-title"><span class="kicker">Ablauf &amp; Tipps</span><h2>So legt ihr los</h2></div>
+    <div class="timeline">
+      <div class="t"><span class="d"></span><b>Team &amp; Idee</b><span>5 Min · worum geht's?</span></div>
+      <div class="t"><span class="d"></span><b>Plan</b><span>Agent nach Struktur fragen</span></div>
+      <div class="t"><span class="d"></span><b>Bauen</b><span>iterieren in der Schleife</span></div>
+      <div class="t"><span class="d"></span><b>Zeigen</b><span>2 Min Pitch</span></div>
+    </div>
+    <div class="row3" style="margin-top:2rem;">
+      <div class="card"><h3>Klein anfangen</h3><p>Erst eine Seite, die funktioniert – dann erweitern.</p></div>
+      <div class="card"><h3>Ziel statt Schritte</h3><p>Sagt <em>was</em> ihr wollt, lasst den Agenten das <em>wie</em> finden.</p></div>
+      <div class="card"><h3>Delegieren</h3><p>Große Recherchen? Lasst Subagenten parallel ran.</p></div>
+    </div>
+  </section>
+
+  <!-- 17 Schluss -->
+  <section class="slide center tint" id="s-end">
+    <span class="kicker">Viel Erfolg!</span>
+    <h1 style="max-width:18ch;">Aus Denken wird <span class="em">Wirkung</span>.</h1>
+    <p class="lead" style="margin:1.3rem auto 0;">Ihr kennt jetzt die Schichten – vom Modell über den Harness bis zu parallelen Subagenten – und setzt sie für etwas Gutes ein.</p>
+    <p style="margin-top:1.8rem;color:var(--muted);font-weight:700;">sdw Alumni · Netzwerk fürs Leben</p>
+  </section>
+
+</div>
+
+<script>
+  const deck=document.getElementById('deck');
+  const slides=Array.from(deck.querySelectorAll('.slide'));
+  const bar=document.getElementById('bar'), cur=document.getElementById('cur');
+  document.getElementById('tot').textContent=slides.length;
+  let i=0;
+  function show(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach((s,idx)=>s.classList.toggle('active',idx===i));
+    bar.style.width=(i/(slides.length-1)*100)+'%';
+    cur.textContent=i+1;
+    document.body.classList.toggle('hide-brand',i===0);
+  }
+  const next=()=>show(i+1), prev=()=>show(i-1);
+  document.addEventListener('keydown',e=>{
+    if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();next();}
+    else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();prev();}
+    else if(e.key==='Home')show(0);
+    else if(e.key==='End')show(slides.length-1);
+    else if(e.key.toLowerCase()==='f'){document.fullscreenElement?document.exitFullscreen?.():document.documentElement.requestFullscreen?.();}
+  });
+  deck.addEventListener('click',e=>{if(e.target.closest('a'))return;(e.clientX<window.innerWidth*0.25?prev:next)();});
+  show(0);
+</script>
+</body>
+</html>
