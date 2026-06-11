@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Workshop + mini-hackathon materials for **sdw Alumni** ("Netzwerk fürs Leben"). The centrepiece is `praesentation.html` — a self-contained, offline-ready German-language slide deck. The `.claude/skills/` directory holds three project-local skills that accelerate prototype building during the hackathon.
+Workshop + mini-hackathon materials for **sdw Alumni** ("Netzwerk fürs Leben"). The centrepiece is `praesentation.html` — a self-contained, offline-ready German-language slide deck. The `.claude/skills/` directory holds four project-local skills that accelerate prototype building during the hackathon.
 
 ## Running the presentation
 
@@ -14,13 +14,14 @@ open praesentation.html   # macOS — no build step, no dependencies
 
 ## Project-local skills
 
-Three skills are registered in `.claude/skills/`. Always use them rather than reinventing the wheel:
+Four skills are registered in `.claude/skills/`. Always use them rather than reinventing the wheel:
 
 | Skill | When to use |
 |---|---|
 | `hackathon-prototype` | Scaffold FastAPI backend (JSON-file DB) + React/Vite frontend |
 | `sdw-frontend` | Apply sdw Alumni branding to any web UI |
 | `ngrok-share` | Expose a local port publicly via ngrok |
+| `stock-image` | Find free stock photos via the Pexels API |
 
 After editing a skill's `SKILL.md`, run `/reload-skills` so Claude Code picks up the changes.
 
@@ -40,7 +41,7 @@ Set `VITE_API_URL` in `frontend/.env` when the backend is reachable via ngrok in
 
 ## Secrets
 
-`NGROK_AUTHTOKEN` lives in `.env` (gitignored). Copy `.env.example` → `.env` and fill it in. Never echo or commit the token.
+`NGROK_AUTHTOKEN` and `PEXELS_API_KEY` live in `.env` (gitignored). Copy `.env.example` → `.env` and fill them in. Never echo or commit the tokens.
 
 ## sdw branding rules (short form)
 
