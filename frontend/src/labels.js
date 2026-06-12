@@ -26,12 +26,13 @@ export const TAETIGKEITEN = {
   praktisch: "Praktisch",
 };
 
-// Artwork je Thema (frontend/public/themes/*.svg)
+// Artwork je Thema (frontend/public/themes/*.svg). BASE_URL berücksichtigt den
+// Deploy-Pfad (z. B. /sdw-hackathon/ bei GitHub Pages).
 export function angebotBild(angebot) {
   if (angebot.bild) return angebot.bild;
   const thema = (angebot.themen || [])[0];
   const bekannt = ["bildung", "soziales", "integration", "umwelt", "kultur", "digitales", "gesundheit"];
-  return `/themes/${bekannt.includes(thema) ? thema : "default"}.svg`;
+  return `${import.meta.env.BASE_URL}themes/${bekannt.includes(thema) ? thema : "default"}.svg`;
 }
 
 export const ZIELGRUPPEN = {

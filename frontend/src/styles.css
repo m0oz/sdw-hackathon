@@ -21,7 +21,7 @@
 *{box-sizing:border-box;margin:0;padding:0;}
 html{font-size:16px;}
 body{font-family:var(--sdw-font);color:var(--sdw-ink);line-height:1.5;
-  background:var(--sdw-paper) url('/hamburg-hero.svg') no-repeat bottom center fixed;
+  background:var(--sdw-paper) var(--hero-bg,url('/hamburg-hero.svg')) no-repeat bottom center fixed;
   background-size:cover;}
 a{color:var(--sdw-teal-d);}
 

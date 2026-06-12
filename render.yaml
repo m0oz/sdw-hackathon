@@ -1,0 +1,23 @@
+# Render Blueprint – Backend (FastAPI) auf dem kostenlosen Tier.
+# Anlegen: render.com → New → Blueprint → dieses Repo auswählen.
+#
+# Hinweise zum Free-Tier:
+#  - Der Dienst „schläft" nach ~15 Min Inaktivität; der erste Aufruf danach
+#    dauert ~30–60 s (Cold Start).
+#  - Das Dateisystem ist flüchtig: backend/data.json wird bei jedem Neustart/
+#    Deploy auf den committeten Stand zurückgesetzt. Community-Einträge, Logins
+#    und Merklisten gehen dabei verloren – für eine Demo in Ordnung.
+services:
+  - type: web
+    name: ehrenmoin-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.4"
+      # Geheimnis fürs Gate-Token (Mensch-Frage). Einmal generiert, stabil.
+      - key: GATE_SECRET
+        generateValue: true

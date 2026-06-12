@@ -9,7 +9,7 @@ import Gruppe from "./components/Gruppe.jsx";
 function Brand() {
   return (
     <div className="brand">
-      <img className="logo" src="/sdw-alumni-logo.png" alt="sdw Alumni" />
+      <img className="logo" src={`${import.meta.env.BASE_URL}sdw-alumni-logo.png`} alt="sdw Alumni" />
     </div>
   );
 }
@@ -51,9 +51,10 @@ function HumanGate({ onPass }) {
   return (
     <div className="gate-overlay">
       <form className="card teal gate-card" onSubmit={pruefen}>
-        <span className="kicker">Kurze Frage</span>
-        <h3>Bist du ein Mensch?</h3>
-        <p>Wie heißt die jährliche sdw-Aktion für soziales Engagement?</p>
+        <span className="kicker">Botcheck</span>
+        <h3>Kurz bestätigen, dass du kein Bot bist</h3>
+        <p>Beantworte eine Frage, die in der sdw-Community jede:r kennt:
+          Wie heißt die jährliche sdw-Aktion für soziales Engagement?</p>
         <input autoFocus type="text" value={antwort}
           onChange={(e) => { setAntwort(e.target.value); setFehler(false); }}
           placeholder="Deine Antwort" />
@@ -101,7 +102,7 @@ function Login({ onLogin }) {
       <Brand />
       <div className="shell hero">
         <div className="bracket">
-          <img className="logo-hero" src="/ehrenmoin-logo.svg" alt="EhrenMoin – Ehrenamt in Hamburg" />
+          <img className="logo-hero" src={`${import.meta.env.BASE_URL}ehrenmoin-logo.svg`} alt="EhrenMoin – Ehrenamt in Hamburg" />
           <span className="kicker">Netzwerk fürs Leben</span>
           <h1>Moin! Finde dein Ehrenamt.</h1>
         </div>
@@ -270,7 +271,7 @@ export default function App() {
       <Brand />
       <div className="shell">
         <nav className="nav">
-          <img className="nav-logo" src="/ehrenmoin-logo.svg" alt="EhrenMoin" />
+          <img className="nav-logo" src={`${import.meta.env.BASE_URL}ehrenmoin-logo.svg`} alt="EhrenMoin" />
           <button className={view === "quiz" || view === "ergebnis" ? "active" : ""}
             onClick={() => setView(ergebnisse ? "ergebnis" : "quiz")}>
             Matching
