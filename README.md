@@ -17,6 +17,15 @@ Das Ergebnis unten wurde in nur **45 Minuten mit KI** gebaut. Hier ist es.
 > Insgesamt entstanden an diesem Tag **vier Prototypen – alle gleichermaßen
 > beeindruckend**. Stellvertretend zeigen wir hier einen davon.
 
+### 🚀 Live ausprobieren
+
+**→ [m0oz.github.io/sdw-hackathon](https://m0oz.github.io/sdw-hackathon/)**
+
+<a href="https://m0oz.github.io/sdw-hackathon/"><img src="pitch-assets/qr-demo.png" alt="QR-Code zur Live-Demo" width="180" /></a>
+
+<sub>QR-Code scannen oder dem Link folgen. Hinweis: Das Backend läuft auf einem
+kostenlosen Tier und „schläft" bei Inaktivität – der erste Aufruf kann 30–60 s dauern.</sub>
+
 ![EhrenMoin – Matching-Ergebnis: „Diese 4 Engagements passen zu dir"](pitch-assets/03-ergebnis.png)
 
 **Die Idee in einem Satz:** Stipendiat:innen und Alumni beantworten **fünf kurze
@@ -33,8 +42,9 @@ Was die App kann:
   Veranstaltungen, die **für alle** passen. Ideal, um sich gemeinsam zu engagieren.
 - **Community-Einträge** – Organisationen und Veranstaltungen lassen sich selbst eintragen.
 
-Die Angebote sind **24 echte, recherchierte Ehrenamts-Möglichkeiten aus Hamburg** –
-keine Platzhalter.
+Die Angebote sind **über 80 echte, recherchierte Ehrenamts-Möglichkeiten aus Hamburg
+und Umgebung** – keine Platzhalter, von Bildung und Integration über Umwelt,
+Soziales und Gesundheit bis Kultur, Digitales und Bevölkerungsschutz.
 
 Weitere Eindrücke liegen im Ordner [`pitch-assets/`](pitch-assets/) (Login, Quiz,
 Angebotsliste, Gruppen-Matching, Merkliste).
@@ -98,9 +108,9 @@ cd frontend && npm install && npm run dev   # http://localhost:5173
 
 ### Wie das Matching funktioniert
 
-- **Daten:** `backend/data.json` — 24 kuratierte, echte Hamburger Angebote
-  (recherchiert aus `docs/datenquellen-ehrenamt.md`); Community-Einträge landen in
-  derselben Datei mit `"quelle": "community"`.
+- **Daten:** `backend/data.json` — über 80 echte Hamburger Angebote: 24 handkuratierte
+  (`"quelle": "kuratiert"`) plus per Web-Recherche ergänzte (`"quelle": "recherchiert"`).
+  Community-Einträge landen in derselben Datei mit `"quelle": "community"`.
 - **Matching:** `POST /api/matching` gewichtet Themen ×3, Tätigkeit ×2, Zeit ×2,
   Format ×2, Zielgruppe ×1,5 und liefert die Top 4 mit Begründung.
 - **Quiz-Fragen:** zentral in `backend/main.py` (`FRAGEN`) — Wording dort anpassen,

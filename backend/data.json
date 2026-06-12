@@ -610,6 +610,1558 @@
       "bezirk": "Stadtweit",
       "website": "https://www.hamburger-sportbund.de",
       "quelle": "kuratiert"
+    },
+    {
+      "id": "schulerpaten-hamburg-e-v",
+      "titel": "Schüler:innen-Mentor:in bei Schülerpaten Hamburg",
+      "organisation": "Schülerpaten Hamburg e.V.",
+      "beschreibung": "Du begleitest wöchentlich ein Kind oder einen Jugendlichen mit Migrationsgeschichte beim Lernen und im Alltag – und schaffst damit echte Bildungsgerechtigkeit in deiner Stadt. Das Tandem gestaltet seine Zeit frei, du wirst durch einen Einführungsworkshop und laufende Seminare gut vorbereitet.",
+      "themen": [
+        "bildung",
+        "soziales",
+        "integration"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "jugendliche"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 2 Std./Woche",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://schuelerpaten-hamburg.de",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "leseleo-e-v",
+      "titel": "Lesepat:in für Grundschulkinder",
+      "organisation": "Leseleo e.V.",
+      "beschreibung": "Du liest einmal pro Woche eine Stunde mit einem Kind – und stärkst so ganz nebenbei seine Sprachkompetenz und Freude am Lesen. Leseleo begleitet dich mit Coaching, Lesematerial und stellt dir das Hamburger Nachweis-Zertifikat für bürgerschaftliches Engagement aus.",
+      "themen": [
+        "bildung",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "kinder"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "1 Std./Woche",
+      "ort": "Hamburg & Metropolregion",
+      "bezirk": "Stadtweit",
+      "website": "https://www.leseleo.de",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "lern-fair-e-v",
+      "titel": "Online-Lernhelfer:in (kostenlose Nachhilfe)",
+      "organisation": "Lern-Fair e.V.",
+      "beschreibung": "Von zuhause aus gibst du benachteiligten Kindern und Jugendlichen online kostenlose 1:1-Nachhilfe oder leitest Gruppenkurse – flexibel und ab einer Stunde pro Woche. Lern-Fair vermittelt dich, begleitet dich durch dein Engagement und stellt dir ein Zertifikat aus.",
+      "themen": [
+        "bildung",
+        "soziales",
+        "digitales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "jugendliche"
+      ],
+      "format": "remote",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "ab 1 Std./Woche, flexibel",
+      "ort": "Hamburg & online",
+      "bezirk": "Stadtweit",
+      "website": "https://lern-fair.de",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "schlaufox-e-v",
+      "titel": "Bildungsmentor:in für junge Geflüchtete",
+      "organisation": "SchlauFox e.V.",
+      "beschreibung": "Du begleitest einen jungen Geflüchteten ein Jahr lang auf seinem Bildungsweg – beim Deutschlernen, Schulabschluss oder Ausbildungseinstieg, auf Augenhöhe und 1:1. SchlauFox qualifiziert dich, gibt dir Supervision und hat seinen Sitz direkt an der Reeperbahn.",
+      "themen": [
+        "bildung",
+        "soziales",
+        "integration"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "jugendliche"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 2 Std./Woche, 1 Jahr",
+      "ort": "Hamburg",
+      "bezirk": "Hamburg-Mitte",
+      "website": "https://www.schlaufox.de",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "studytutors-e-v-hamburg",
+      "titel": "Ehrenamtliche:r Nachhilfelehrer:in",
+      "organisation": "StudyTutors e.V. Hamburg",
+      "beschreibung": "Du gibst finanziell benachteiligten Kindern und Jugendlichen in Hamburg kostenlose Nachhilfe – mit geringem, selbst bestimmtem Zeitaufwand und voller Begleitung durch das StudyTutors-Team. Als Studierende:r oder Berufstätige:r kannst du dich unkompliziert bewerben.",
+      "themen": [
+        "bildung",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "jugendliche"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "wenige Std./Woche, flexibel",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://studytutors.de/standorte/hamburg",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "start-with-a-friend-e-v",
+      "titel": "Tandem-Partner:in für Newcomer:innen",
+      "organisation": "Start with a Friend e.V.",
+      "beschreibung": "Du triffst dich regelmäßig mit einer Person, die neu in Hamburg ist, und begleitest sie beim Ankommen – beim Deutschüben, beim Erkunden der Stadt oder einfach als Freund:in. Zwei Stunden die Woche können den Unterschied machen.",
+      "themen": [
+        "integration",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 2 Stunden pro Woche",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.start-with-a-friend.de",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "hamburger-mit-herz-e-v",
+      "titel": "Sprachlots:in – Deutsch unterrichten für Geflüchtete",
+      "organisation": "HAMBURGER*MIT HERZ e.V.",
+      "beschreibung": "Als Sprachlots:in leitest du kleine Deutschgruppen für Geflüchtete – auf Augenhöhe und ohne pädagogische Vorbildung. Du wirst von Anfang an begleitet und kannst sowohl vor Ort als auch online aktiv sein.",
+      "themen": [
+        "integration",
+        "bildung"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "hybrid",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "1× pro Woche ca. 2–3 Stunden",
+      "ort": "Hamburg & online",
+      "bezirk": "Stadtweit",
+      "website": "https://www.hamburger-mit-herz.de/projekte/sprachprojekt/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "hamburger-mit-herz-e-v-2",
+      "titel": "Mentor:in für geflüchtete Menschen",
+      "organisation": "HAMBURGER*MIT HERZ e.V.",
+      "beschreibung": "Du wirst zur verlässlichen Bezugsperson für einen geflüchteten Menschen – beim Spazierengehen, beim Behördengang oder beim gemeinsamen Entdecken deiner Hobbys. Einmal pro Woche, ganz nach euren gemeinsamen Absprachen.",
+      "themen": [
+        "integration",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 1 Stunde pro Woche, flexibel",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.hamburger-mit-herz.de/projekte/mentorinnen-fuer-gefluechtete/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "cafe-exil-hamburg",
+      "titel": "Berater:in & Begleiter:in bei Behördengängen",
+      "organisation": "Café Exil Hamburg",
+      "beschreibung": "Du hilfst Geflüchteten und Migrant:innen beim Ausfüllen von Formularen, begleitest zu Behörden und bist im Café als Ansprechperson da. Ein selbstverwaltetes Projekt, das auf dein Engagement und deine Haltung setzt – nicht auf deinen Lebenslauf.",
+      "themen": [
+        "integration",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Regelmäßige Schichten nach Absprache",
+      "ort": "Hamburg",
+      "bezirk": "Wandsbek",
+      "website": "https://www.cafe-exil.info/de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "die-insel-hilft-e-v",
+      "titel": "Integrations-Ehrenamtliche:r in Wilhelmsburg",
+      "organisation": "Die Insel Hilft e.V.",
+      "beschreibung": "In Hamburg-Wilhelmsburg engagierst du dich direkt in der Nachbarschaft – beim Deutschlernen, im Sprachtandem, beim gemeinsamen Kochen oder in der inklusiven Werkstatt. Wir finden gemeinsam heraus, was zu dir passt.",
+      "themen": [
+        "integration",
+        "soziales",
+        "bildung"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Flexibel nach Absprache",
+      "ort": "Hamburg-Wilhelmsburg",
+      "bezirk": "Hamburg-Mitte",
+      "website": "https://die-insel-hilft.de",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "burger-helfen-burgern-e-",
+      "titel": "Chancen-Pate:in für Geflüchtete & Migrant:innen",
+      "organisation": "BÜRGER-HELFEN-BÜRGERN e.V. Hamburg",
+      "beschreibung": "Du wirst zur Vertrauensperson für einen Menschen mit Flucht- oder Migrationserfahrung – unterstützt beim Schulabschluss, beim Berufseinstieg oder einfach beim Ankommen in Hamburg. Ob 1:1 oder in der Gruppe: dein Engagement zählt.",
+      "themen": [
+        "integration",
+        "bildung",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "jugendliche",
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 1–2 Stunden pro Woche",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://buerger-helfen-buergern.hamburg/projekte/tandem-projekte-mit-gefluechteten/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "bund-hamburg",
+      "titel": "Praktischer Naturschutz mit dem BUND Hamburg",
+      "organisation": "BUND Hamburg",
+      "beschreibung": "Beim BUND Hamburg packst du mit an, wo es wirklich zählt: Du hilfst Kröten über die Straße, mähst Streuobstwiesen, pflegst Naturschutzgebiete – ganz nach deiner Zeit, ob einmalig oder regelmäßig. Eine Ehrenamtskoordination hilft dir, die Aufgabe zu finden, die zu dir passt.",
+      "themen": [
+        "umwelt"
+      ],
+      "taetigkeit": [
+        "praktisch",
+        "fachlich"
+      ],
+      "zielgruppen": [],
+      "format": "vor_ort",
+      "zeit": [
+        "einmalig",
+        "flexibel",
+        "regelmaessig"
+      ],
+      "zeitumfang": "Von Einzelaktionen bis zu regelmäßigen Gruppenterminen",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.bund-hamburg.de/mitmachen/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "loki-schmidt-stiftung",
+      "titel": "Biotoppflege in Hamburgs Naturschutzgebieten",
+      "organisation": "Loki Schmidt Stiftung",
+      "beschreibung": "Die Loki Schmidt Stiftung schützt seltene Naturräume in Hamburg – und du kannst direkt mitanpacken. Bei Arbeitseinsätzen in der Fischbeker Heide, den Boberger Dünen oder anderen Schutzflächen sorgst du dafür, dass Heide, Moor und Dünen erhalten bleiben.",
+      "themen": [
+        "umwelt"
+      ],
+      "taetigkeit": [
+        "praktisch"
+      ],
+      "zielgruppen": [],
+      "format": "vor_ort",
+      "zeit": [
+        "einmalig",
+        "flexibel",
+        "regelmaessig"
+      ],
+      "zeitumfang": "Einzelne Arbeitseinsätze (2–4 Std.) bis regelmäßige Betreuung",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://loki-schmidt-stiftung.de/zeit-spenden",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "oclean-hamburg",
+      "titel": "Stadtputz: Müll sammeln mit OCLEAN",
+      "organisation": "OCLEAN Hamburg",
+      "beschreibung": "Einmal im Monat macht OCLEAN einen Hamburger Kiez ein Stück sauberer – du tauchst einfach auf, bekommst Zange und Handschuhe gestellt und sammelst gemeinsam mit anderen Müll ein. Keine Anmeldung nötig, alle Altersgruppen willkommen.",
+      "themen": [
+        "umwelt"
+      ],
+      "taetigkeit": [
+        "praktisch"
+      ],
+      "zielgruppen": [],
+      "format": "vor_ort",
+      "zeit": [
+        "einmalig",
+        "flexibel"
+      ],
+      "zeitumfang": "ca. 1–2 Stunden, ein Termin pro Monat",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://oclean.hamburg/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "greenpeace-hamburg",
+      "titel": "Umweltkampagnen mitgestalten bei Greenpeace",
+      "organisation": "Greenpeace Hamburg",
+      "beschreibung": "Bei Greenpeace Hamburg wirkst du in einer lebendigen Gruppe mit, die sich für Klima-, Meeres- und Ernährungsschutz stark macht – ob am Infostand, bei Aktionen oder in einem thematischen Arbeitskreis. Du bringst deine Stärken mit, das Team zeigt dir, wie du am meisten bewegst.",
+      "themen": [
+        "umwelt"
+      ],
+      "taetigkeit": [
+        "praktisch",
+        "fachlich"
+      ],
+      "zielgruppen": [],
+      "format": "hybrid",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Regelmäßige Treffen, je nach Arbeitskreis",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.greenpeace-hamburg.de/mitmachen/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "naju-hamburg-naturschutz",
+      "titel": "Naturschutz für junge Erwachsene – NAJU",
+      "organisation": "NAJU Hamburg – Naturschutzjugend",
+      "beschreibung": "Die NAJU Hamburg bietet dir vielfältige Wege in den aktiven Naturschutz: von der Leitung einer Natur-Kindergruppe über Nistkastenmonitoring bis zum mehrtägigen Coastal-Cleanup-Camp an der Elbe. Du wirst ausgebildet, begleitet und bist Teil einer engagierten Gemeinschaft.",
+      "themen": [
+        "umwelt",
+        "bildung"
+      ],
+      "taetigkeit": [
+        "praktisch",
+        "menschen"
+      ],
+      "zielgruppen": [
+        "jugendliche",
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "einmalig",
+        "flexibel",
+        "regelmaessig"
+      ],
+      "zeitumfang": "Flexibel oder regelmäßig (z. B. 14-tägige Kindergruppen)",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.naju-hh.de/ehrenamt/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "fuhlsgarden",
+      "titel": "Gemeinschaftsgärtnern im FuhlsGarden",
+      "organisation": "FuhlsGarden",
+      "beschreibung": "Im FuhlsGarden gestaltest du mit anderen Barmbeker:innen einen ökologischen Gemeinschaftsgarten – ohne Mitgliedschaft, ohne Beitrag, ohne Verpflichtung. Jeden Sonntag ab 15 Uhr wird gemeinsam gepflanzt, gepflegt, geerntet und gelacht.",
+      "themen": [
+        "umwelt",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "praktisch"
+      ],
+      "zielgruppen": [],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Jeden Sonntag ab 15 Uhr",
+      "ort": "Hamburg-Barmbek",
+      "bezirk": "Hamburg-Nord",
+      "website": "https://www.fuhlsgarden.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "hilfsverein-st-ansgar-al",
+      "titel": "Mithelfen in der Suppenküche der Alimaus",
+      "organisation": "Hilfsverein St. Ansgar – Alimaus",
+      "beschreibung": "In der Alimaus in Altona versorgst du täglich obdachlose und bedürftige Menschen mit Frühstück und warmen Mahlzeiten – in der Küche, bei der Ausgabe oder im Kleiderraum, in einem Rhythmus, der zu deinem Leben passt.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "flexibel",
+        "regelmaessig"
+      ],
+      "zeitumfang": "mind. 1× pro Woche, Schicht ca. 3–4 Std.",
+      "ort": "Hamburg",
+      "bezirk": "Altona",
+      "website": "https://alimaus.de/zeitspenden/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "cafee-mit-herz-e-v",
+      "titel": "Tagestreff für Obdachlose mitgestalten",
+      "organisation": "CaFée mit Herz e.V.",
+      "beschreibung": "Im CaFée mit Herz in St. Pauli bietest du obdachlosen und sozial benachteiligten Menschen täglich Frühstück, Mittagessen, Dusche und ein offenes Ohr – gemeinsam mit über 40 Ehrenamtlichen in einem herzlichen Team.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Regelmäßige Schichten nach Absprache",
+      "ort": "Hamburg",
+      "bezirk": "Hamburg-Mitte",
+      "website": "https://cafeemitherz.de/ueber-uns/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "hilfspunkt-e-v",
+      "titel": "Kostenloses Wochenend-Frühstück für Bedürftige",
+      "organisation": "Hilfspunkt e.V.",
+      "beschreibung": "Bei Hilfspunkt e.V. hilfst du an Wochenenden, hunderte bedürftige und obdachlose Menschen an mehreren Standorten in Hamburg mit einem kostenlosen Frühstück zu versorgen – Zuverlässigkeit und Herzlichkeit sind alles, was du mitbringen musst.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene",
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "mind. 1× pro Monat samstags, 8–10 Uhr",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://hilfspunkt.bplaced.net/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "forderverein-winternotpr",
+      "titel": "Abendessen im Winternotprogramm zubereiten",
+      "organisation": "Förderverein Winternotprogramm für Obdachlose e.V.",
+      "beschreibung": "Im Winternotprogramm bereitest du an Abenden in der Gemeinschaftsküche warme Mahlzeiten für bis zu 400 obdachlose Menschen zu und gibst sie aus – ein konkreter Beitrag in den kältesten Monaten des Jahres.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Abendschichten ab 16 Uhr (November–März)",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.winternotprogramm.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "drk-kreisverband-hamburg",
+      "titel": "Warme Mahlzeiten am DRK Food Truck ausgeben",
+      "organisation": "DRK Kreisverband Hamburg Altona und Mitte e.V.",
+      "beschreibung": "Jeden Samstag am Altonaer Bahnhof verteilst du gemeinsam mit einem DRK-Team kostenlose warme Gerichte an obdachlose Menschen – und schenkst ihnen dabei mehr als nur ein Essen.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Jeden Samstag ab 16 Uhr",
+      "ort": "Hamburg",
+      "bezirk": "Altona",
+      "website": "https://www.drk-altona-mitte.de/start/ehrenamt/ehrenamtliche-sozialarbeit/food-truck.html",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "caritas-hamburg",
+      "titel": "Ehrenamtliche Schuldner:innenberatung",
+      "organisation": "Caritas Hamburg",
+      "beschreibung": "Als ehrenamtliche:r Schuldnerberater:in bei der Caritas Hamburg begleitest du Menschen in finanzieller Not: Du hilfst ihnen, ihre Lage zu überblicken, Gläubiger zu kontaktieren und einen Weg aus der Verschuldung zu finden – vertraulich und auf Augenhöhe.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Nach Absprache, eigene Beratungstermine",
+      "ort": "Hamburg",
+      "bezirk": "Hamburg-Mitte",
+      "website": "https://www.caritas-im-norden.de/hamburg/armut-schulden/ehrenamtliche-schuldnerberatung",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "hamburg-leuchtfeuer",
+      "titel": "Hospizbegleiter:in bei Hamburg Leuchtfeuer",
+      "organisation": "Hamburg Leuchtfeuer",
+      "beschreibung": "Du möchtest schwerkranken Menschen echte Nähe schenken und sie in ihrer letzten Lebensphase begleiten? Bei Hamburg Leuchtfeuer engagierst du dich in der Hospizbegleitung, am Empfang, in der Küche oder bei Kreativprojekten – fachlich begleitet von der Ehrenamtskoordination.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 2–4 Stunden pro Woche, nach Absprache",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.hamburg-leuchtfeuer.de/ehrenamt/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "hospizverein-hamburger-s",
+      "titel": "Hospizbegleiter:in im ambulanten Dienst",
+      "organisation": "Hospizverein Hamburger Süden e.V.",
+      "beschreibung": "Du möchtest sterbenden Menschen und ihren Familien in einer der schwersten Lebensphasen zur Seite stehen? Als ehrenamtliche:r Hospizbegleiter:in begleitest du Menschen zu Hause oder im Hospiz – nach einer fundierten Ausbildung.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "erwachsene",
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Regelmäßige Einsätze; 10-monatige Ausbildung",
+      "ort": "Hamburg-Harburg",
+      "bezirk": "Harburg",
+      "website": "https://www.hospizvereinhamburgersueden.de/hospizbegleiter/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "kinder-hospiz-sternenbru",
+      "titel": "Zeitspende im Kinder-Hospiz Sternenbrücke",
+      "organisation": "Kinder-Hospiz Sternenbrücke",
+      "beschreibung": "Du möchtest schwerkranken Kindern, Jugendlichen und ihren Familien in einer besonders schwierigen Zeit zur Seite stehen? Im Kinderhospiz Sternenbrücke bringst du dich nach einer Schulung in Alltagsbegleitung, Küche, Empfang oder bei Veranstaltungen ein.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "jugendliche"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "mind. 2 Schichten pro Monat",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://sternenbruecke.de/spenden/ehrenamt",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "alzheimer-gesellschaft-h",
+      "titel": "Begleitung von Menschen mit Demenz",
+      "organisation": "Alzheimer Gesellschaft Hamburg e.V.",
+      "beschreibung": "Du hast Geduld und Lust, Menschen mit Demenz und ihren Angehörigen echte Unterstützung zu geben? Bei der Alzheimer Gesellschaft Hamburg begleitest du Menschen bei Spaziergängen, in Tagestreffs oder am Alzheimer-Telefon – nach einer kostenlosen Schulung.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "1–4 Einsätze pro Monat, je 3–6 Stunden",
+      "ort": "Hamburg",
+      "bezirk": "Wandsbek",
+      "website": "https://www.alzheimer-hamburg.de/ehrenamt",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "evangelische-kranken-und",
+      "titel": "Grüne Dame / Grüner Herr im Krankenhaus",
+      "organisation": "Evangelische Kranken- und Alten-Hilfe (EKH)",
+      "beschreibung": "Du möchtest Patient:innen im Krankenhaus oder Pflegeheim einfach zuhören, Gesellschaft leisten und bei kleinen Besorgungen helfen? Als Grüne Dame oder Grüner Herr schenkst du 2–4 Stunden pro Woche echte Zuwendung an Hamburger Kliniken.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "erwachsene",
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "2–4 Stunden pro Woche",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.ekh-deutschland.de/ehrenamtliche/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "leben-mit-behinderung-ha",
+      "titel": "Freizeitbegleitung für Menschen mit Behinderung",
+      "organisation": "Leben mit Behinderung Hamburg",
+      "beschreibung": "Du hast Lust, Menschen mit Behinderung bei Ausflügen, Kulturveranstaltungen oder alltäglichen Aktivitäten zu begleiten? Bei Leben mit Behinderung Hamburg gestaltest du gemeinsam schöne Momente – und bestimmst selbst, wie viel Zeit du einbringen möchtest.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "flexibel",
+        "regelmaessig"
+      ],
+      "zeitumfang": "Flexibel nach Absprache",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://lmbhh.de/ueber-uns/unterstuetzt-uns/freiwilliges-engagement",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "stiftung-historische-mus",
+      "titel": "Freiwillige:r in Hamburgs historischen Museen",
+      "organisation": "Stiftung Historische Museen Hamburg (SHMH)",
+      "beschreibung": "In sieben Hamburger Museen – vom Altonaer Museum bis zum Deutschen Hafenmuseum – machst du Geschichte lebendig: als Begleitung im Museumsladen, beim Betrieb historischer Druckmaschinen oder bei der Digitalisierung der Sammlung. Regelmäßig oder ganz sporadisch.",
+      "themen": [
+        "kultur"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "jugendliche",
+        "erwachsene",
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "flexibel",
+        "regelmaessig"
+      ],
+      "zeitumfang": "Schichten à ca. 4 Std., auch gelegentlich",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.shmh.de/engagement-und-freiwillige-mitarbeit/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "altonale-gmbh",
+      "titel": "Festivalhelfende bei der altonale",
+      "organisation": "altonale GmbH",
+      "beschreibung": "Beim größten Kulturfestival Norddeutschlands in Altona trägst du als Eventlots:in oder Kulturbotschafter:in dazu bei, dass über 200.000 Besucher:innen Kultur kostenlos erleben. Das Festival lebt von Menschen wie dir, die für offene, vielfältige Kultur brennen.",
+      "themen": [
+        "kultur",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "jugendliche",
+        "erwachsene",
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "einmalig",
+        "regelmaessig"
+      ],
+      "zeitumfang": "Während des Festivals (ca. 10 Tage im Juni)",
+      "ort": "Hamburg-Altona",
+      "bezirk": "Altona",
+      "website": "https://www.altonale.de/ueber-uns/beteiligung/freiwillige/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "special-olympics-hamburg",
+      "titel": "Ehrenamtliche:r bei Special Olympics Hamburg",
+      "organisation": "Special Olympics Hamburg",
+      "beschreibung": "Bei Special Olympics Hamburg unterstützt du Menschen mit geistiger Behinderung beim Sport – als Unified-Sports-Partner:in, Übungsleiter:in oder im Eventmanagement. Ob einmalig bei einem Turnier oder langfristig als Mentor:in: das Ehrenamt passt sich deinem Leben an.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "einmalig",
+        "flexibel",
+        "regelmaessig"
+      ],
+      "zeitumfang": "Flexibel – von Events bis regelmäßigem Engagement",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://specialolympics.de/hamburg/mitmachen/engagement-ehrenamt",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "sportclub-alstertal-lang",
+      "titel": "Tandem-Partner:in im inklusiven Sport",
+      "organisation": "Sportclub Alstertal-Langenhorn (SCALA)",
+      "beschreibung": "Als Tandem-Partner:in begleitest du Menschen mit Behinderung oder psychischer Erkrankung auf dem Weg zu mehr Bewegung – zum Beispiel zum Training oder zu Sporttreffen. Du brauchst keine Vorkenntnisse, nur Freude an Begegnung und Bewegung.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Einige Stunden pro Monat, individuell",
+      "ort": "Hamburg",
+      "bezirk": "Hamburg-Nord",
+      "website": "https://scala-sportclub.de/sportangebot/inklusion/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "kulturzentrum-bim-e-v",
+      "titel": "Mitgestalter:in im Kulturzentrum BiM",
+      "organisation": "Kulturzentrum BiM e.V.",
+      "beschreibung": "Das Kulturzentrum BiM im Hamburger Osten sucht Menschen, die ihr Stadtteilzentrum mitgestalten – ob im Garten, handwerklich, in der Öffentlichkeitsarbeit oder bei Veranstaltungen. Regelmäßige Ehrenamtstreffen machen den Einstieg leicht.",
+      "themen": [
+        "kultur",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene",
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Flexibel; monatliches Treffen",
+      "ort": "Hamburg-Meiendorf",
+      "bezirk": "Wandsbek",
+      "website": "https://bim-hamburg.de/ehrenamt/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "kulturleben-hamburg-e-v",
+      "titel": "Kartenvermittlung bei KulturLeben Hamburg",
+      "organisation": "KulturLeben Hamburg e.V.",
+      "beschreibung": "Bei KulturLeben Hamburg vermittelst du gespendete Eintrittskarten für Theater, Museen und Konzerte an Menschen, die sich Kultur sonst nicht leisten könnten – und schenkst damit echte Teilhabe am Hamburger Kulturleben.",
+      "themen": [
+        "kultur",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "hybrid",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Einige Stunden pro Woche, flexibel",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.kulturleben-hamburg.de/mithelfen/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "ok-lab-hamburg-code-for-",
+      "titel": "Civic-Tech-Projekte mit offenen Daten",
+      "organisation": "OK Lab Hamburg / Code for Germany",
+      "beschreibung": "Du interessierst dich für offene Daten, freie Software und digitale Demokratie? Beim OK Lab Hamburg entwickelst du gemeinsam mit anderen Ehrenamtlichen Tools und Visualisierungen, die Hamburgs Verwaltung transparenter und das Stadtleben lebenswerter machen.",
+      "themen": [
+        "digitales"
+      ],
+      "taetigkeit": [
+        "fachlich"
+      ],
+      "zielgruppen": [],
+      "format": "hybrid",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Regelmäßige Treffen (ca. 2 Std.), Eigenarbeit flexibel",
+      "ort": "Hamburg & online",
+      "bezirk": "Stadtweit",
+      "website": "https://codefor.de/hamburg/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "hamburg-digital-dabei",
+      "titel": "Digitalmentor:in für Senior:innen",
+      "organisation": "Hamburg digital dabei",
+      "beschreibung": "Du willst älteren Menschen zeigen, wie Smartphone, Tablet und Online-Dienste das Leben erleichtern? Nach einer kostenlosen eintägigen Schulung wirst du als Digitalmentor:in an Einrichtungen der Seniorenarbeit in Hamburg vermittelt.",
+      "themen": [
+        "digitales",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "nach Absprache, ca. 2 Std./Woche",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://hamburg-digital-dabei.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "openstreetmap-hamburg",
+      "titel": "Offene Karten für Hamburg mitgestalten",
+      "organisation": "OpenStreetMap Hamburg",
+      "beschreibung": "Du möchtest dazu beitragen, dass Hamburgs Straßen, Grünflächen und Infrastruktur frei zugänglich und aktuell kartiert sind? Beim Hamburger Mappertreffen lernst du OpenStreetMap-Werkzeuge und arbeitest an konkreten Kartierungsprojekten für die Stadt.",
+      "themen": [
+        "digitales"
+      ],
+      "taetigkeit": [
+        "fachlich",
+        "praktisch"
+      ],
+      "zielgruppen": [],
+      "format": "hybrid",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "jeden 2. Dienstag im Monat, 19 Uhr",
+      "ort": "Hamburg & online",
+      "bezirk": "Stadtweit",
+      "website": "https://wiki.openstreetmap.org/wiki/Hamburger_Mappertreffen",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "digitalcourage-e-v-ortsg",
+      "titel": "Digitale Grundrechte aktiv verteidigen",
+      "organisation": "Digitalcourage e.V. – Ortsgruppe Hamburg",
+      "beschreibung": "Du willst dich für Datenschutz, Überwachungsfreiheit und ein faires Internet einsetzen? Die Hamburger Ortsgruppe von Digitalcourage trifft sich monatlich, diskutiert aktuelle Themen und entwickelt Kampagnen rund um digitale Bürger:innenrechte.",
+      "themen": [
+        "digitales"
+      ],
+      "taetigkeit": [
+        "fachlich"
+      ],
+      "zielgruppen": [],
+      "format": "hybrid",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "1. Dienstag im Monat, 18:30–20 Uhr",
+      "ort": "Hamburg & online",
+      "bezirk": "Altona",
+      "website": "https://digitalcourage.de/mitmachen",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "wikipedia-community-hamb",
+      "titel": "Freies Wissen für Wikipedia beitragen",
+      "organisation": "Wikipedia-Community Hamburg",
+      "beschreibung": "Du hast Fachkenntnisse und möchtest sie mit der ganzen Welt teilen? Der Hamburger Wikipedia-Stammtisch bringt dich mit anderen aktiven Autor:innen zusammen – ob du bereits Artikel schreibst oder gerade erst einsteigst.",
+      "themen": [
+        "digitales",
+        "bildung",
+        "kultur"
+      ],
+      "taetigkeit": [
+        "fachlich"
+      ],
+      "zielgruppen": [],
+      "format": "hybrid",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Stammtisch alle 1–2 Monate; Schreiben jederzeit",
+      "ort": "Hamburg & online",
+      "bezirk": "Stadtweit",
+      "website": "https://de.wikipedia.org/wiki/Wikipedia:Hamburg",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "fabulous-st-pauli-e-v",
+      "titel": "Im FabLab machen, reparieren, Wissen teilen",
+      "organisation": "Fabulous St. Pauli e.V.",
+      "beschreibung": "Du liebst es, Dinge zu bauen, zu reparieren oder technisches Wissen zu teilen? Das gemeinnützige FabLab in St. Pauli gibt dir Zugang zu 3D-Druckern, Lasercuts und Werkstätten und freut sich über Ehrenamtliche, die Workshops mitgestalten oder Reparaturfeste unterstützen.",
+      "themen": [
+        "digitales",
+        "bildung"
+      ],
+      "taetigkeit": [
+        "fachlich",
+        "praktisch"
+      ],
+      "zielgruppen": [],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Open Lab Day donnerstags ab 17 Uhr; projektabhängig",
+      "ort": "Hamburg-St. Pauli",
+      "bezirk": "Hamburg-Mitte",
+      "website": "https://www.fablab-hamburg.org/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "seniorpartner-diakonie-h",
+      "titel": "Besuchspartner:in für ältere Menschen",
+      "organisation": "SeniorPartner Diakonie Hamburg",
+      "beschreibung": "Du besuchst regelmäßig ältere Menschen zu Hause – spielst mit ihnen, gehst spazieren, begleitest sie zu Arzt oder Einkauf oder hörst einfach zu. Dein Einsatz entlastet pflegende Angehörige und schenkt Senior:innen echte Nähe.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 1–2 Stunden pro Woche, frei wählbar",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.diakonie-hamburg.de/de/rat-und-hilfe/pflege/unterstuetzung-fuer-pflegende-angehoerige/besuchs-und-begleitdienste/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "hamburgische-brucke-e-v",
+      "titel": "Besuchsdienst für Menschen mit Demenz",
+      "organisation": "Hamburgische Brücke e.V.",
+      "beschreibung": "Du schenkst Menschen mit Demenz deine Zeit – beim Vorlesen, gemeinsamen Spaziergängen, Musizieren oder als Teil des Programms „4 Pfoten für Sie\" mit deinem Hund. Du wirst fachlich begleitet und triffst dich regelmäßig zum Austausch.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 2 Stunden pro Woche",
+      "ort": "Hamburg",
+      "bezirk": "Hamburg-Nord",
+      "website": "https://www.hamburgische-bruecke.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "drk-kreisverband-hamburg-2",
+      "titel": "Ehrenamtlicher Besuchsdienst beim DRK",
+      "organisation": "DRK Kreisverband Hamburg-Nordost e.V.",
+      "beschreibung": "Du besuchst regelmäßig ältere oder kranke Menschen – im Krankenhaus oder in Senioreneinrichtungen – führst Gespräche, liest vor und bringst menschliche Wärme. Du wirst eingeführt, erhältst Erste-Hilfe-Training und wirst dauerhaft begleitet.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "senioren",
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 1–2 Stunden wöchentlich oder alle 14 Tage",
+      "ort": "Hamburg",
+      "bezirk": "Wandsbek",
+      "website": "https://www.drk-hamburg-nordost.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "freunde-alter-menschen-e",
+      "titel": "Besuchspartner:in gegen Einsamkeit im Alter",
+      "organisation": "Freunde alter Menschen e.V.",
+      "beschreibung": "Du begleitest einsame ältere Menschen in Hamburg durch regelmäßige Besuche und gemeinsame Unternehmungen – oder gestaltest als GemeinsamkeitsScout Begegnungsangebote in deinem Kiez, die Jung und Alt zusammenbringen.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "ca. 1–2 Stunden pro Woche",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.famev.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "seniorenburo-hamburg-e-v",
+      "titel": "Mitgestalter:in in Seniorengruppen & Generationenprojekten",
+      "organisation": "Seniorenbüro Hamburg e.V.",
+      "beschreibung": "Du engagierst dich in einer von über 40 Seniorengruppen oder generationsübergreifenden Projekten in allen Hamburger Stadtteilen – von Gesprächskreisen über Kultur bis zu Nachbarschaftsinitiativen. Du formst aktiv das Leben in deinem Quartier mit.",
+      "themen": [
+        "soziales",
+        "kultur"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "senioren",
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "variabel, ca. 2–4 Stunden pro Woche",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.seniorenbuero-hamburg.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "freundeskreis-die-arche-",
+      "titel": "Hausaufgabenhilfe & Workshops in der ARCHE",
+      "organisation": "Freundeskreis Die ARCHE Hamburg e.V.",
+      "beschreibung": "In der ARCHE begleitest du Kinder aus sozial benachteiligten Familien beim Lernen, in kreativen Workshops oder mit IT-Wissen – an mehreren Hamburger Standorten. Rund 80 Ehrenamtliche ermöglichen hier täglich, was sonst nicht möglich wäre.",
+      "themen": [
+        "bildung",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "jugendliche"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Mehrere Stunden pro Woche, regelmäßig",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.freundeskreis-arche-hh.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "kinderschutzbund-landesv",
+      "titel": "Familienpatenschaft übernehmen",
+      "organisation": "Kinderschutzbund Landesverband Hamburg e.V.",
+      "beschreibung": "Als Pat:in begleitest du eine Familie oder ein Kind durch den Alltag – verlässlich, offen und auf Augenhöhe, etwa einmal pro Woche für ein paar Stunden. Der Kinderschutzbund schult dich, begleitet dich und sorgt dafür, dass du nie allein bist.",
+      "themen": [
+        "soziales",
+        "integration"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "jugendliche",
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 2–3 Stunden pro Woche",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://kinderschutzbund-hamburg.de/ihre-unterstuetzung/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "wellcome-ggmbh",
+      "titel": "wellcome-Engel: junge Familien nach der Geburt unterstützen",
+      "organisation": "wellcome gGmbH",
+      "beschreibung": "Als wellcome-Engel schenkst du jungen Eltern in den ersten Wochen nach der Geburt echte Entlastung – du passt auf das Baby auf, gehst spazieren oder hörst einfach zu. Ein bis zwei Nachmittage pro Woche, ein paar Monate lang.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "1–2× pro Woche, 2–3 Std., für einige Monate",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://wellcome-online.de/angebote-fuer-familien/standorte-deutschland/hamburg/index.html",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "mitkids-ehlerding-stiftu",
+      "titel": "Aktivpatenschaft für Kinder in belasteten Familien",
+      "organisation": "mitKids – Ehlerding Stiftung",
+      "beschreibung": "Bei mitKids begleitest du ein Kind zwischen 2 und 9 Jahren, das aufgrund einer schwierigen Familiensituation besondere Zuwendung braucht – regelmäßig, verlässlich und herzlich. Deine Zeit ist das Wertvollste, das du mitbringen kannst.",
+      "themen": [
+        "soziales",
+        "bildung"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "kinder"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Regelmäßige Treffen, Bindung mind. 1 Jahr",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://mitkids.ehlerding-stiftung.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "zeit-fur-zukunft-mentore",
+      "titel": "Mentor:in für Hamburger Kinder",
+      "organisation": "Zeit für Zukunft – Mentoren für Kinder e.V.",
+      "beschreibung": "Zwei Nachmittage im Monat können das Leben eines Kindes verändern: Bei Zeit für Zukunft begleitest du ein Kind zwischen 6 und 16 Jahren in einer festen Tandem-Beziehung, die auf gemeinsamen Interessen aufbaut. Du wirst begleitet und geschult.",
+      "themen": [
+        "bildung",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "jugendliche"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "mind. 2 Nachmittage pro Monat, mind. 1 Jahr",
+      "ort": "Hamburg",
+      "bezirk": "Eimsbüttel",
+      "website": "https://www.zeitfuerzukunft.org/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "kinderhelden-ggmbh",
+      "titel": "1:1-Mentor:in für Schulkinder bei KinderHelden",
+      "organisation": "KinderHelden gGmbH",
+      "beschreibung": "Bei KinderHelden begleitest du ein Kind einmal pro Woche beim Lesen, Lernen und gemeinsamen Entdecken – direkt an seiner Schule in Hamburg-Horn, Veddel, Eidelstedt oder Bergedorf. Ein Schuljahr zusammen: Du wächst genauso wie das Kind.",
+      "themen": [
+        "bildung",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "kinder"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 2–3 Std. pro Woche, mind. 1 Schuljahr",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.kinderhelden.info/mitmachen/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "thw-ortsverband-norderst",
+      "titel": "Technische Hilfe im Katastrophenschutz",
+      "organisation": "THW Ortsverband Norderstedt",
+      "beschreibung": "Beim THW Norderstedt kannst du im Ernstfall wirklich etwas bewegen: Du lernst, technische Geräte einzusetzen, hilfst bei Hochwasser, Sturmschäden und Großlagen – und trainierst dafür regelmäßig mit einem starken Team. Ausrüstung und Ausbildung werden gestellt.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "praktisch",
+        "fachlich"
+      ],
+      "zielgruppen": [],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Mehrere Abende im Monat, Einsätze nach Bedarf",
+      "ort": "Norderstedt",
+      "bezirk": "Kreis Segeberg",
+      "website": "https://www.thw-norderstedt.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "dlrg-landesverband-hambu",
+      "titel": "Wasserrettung & Schwimmausbildung",
+      "organisation": "DLRG Landesverband Hamburg e.V.",
+      "beschreibung": "Die DLRG Hamburg ist die größte freiwillige Wasserrettungsorganisation der Stadt – und du kannst Teil davon werden. Ob Wachdienst an Hamburgs Gewässern, Schwimmkurse für Kinder oder die Ausbildung zum Rettungsschwimmer:in: hier rettest du Leben.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "praktisch",
+        "fachlich",
+        "menschen"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "jugendliche",
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Wachdienste und Trainings, mehrere Stunden pro Woche",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://hamburg.dlrg.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "freiwillige-feuerwehr-ha",
+      "titel": "Aktiver Brandschutz in der Freiwilligen Feuerwehr",
+      "organisation": "Freiwillige Feuerwehr Hamburg",
+      "beschreibung": "Bei der Freiwilligen Feuerwehr Hamburg engagierst du dich direkt in deiner Nachbarschaft – bei Bränden, technischen Hilfeleistungen und Unwettereinsätzen. Vorwissen brauchst du nicht: Du wirst von Grund auf ausgebildet und wirst Teil eines echten Teams.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "praktisch",
+        "fachlich"
+      ],
+      "zielgruppen": [],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "2–4 Übungsabende pro Monat, dazu Einsätze",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.feuerwehr-hamburg.de/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "hamburger-tierschutzvere",
+      "titel": "Gassi gehen, Pflege & Betreuung im Tierheim",
+      "organisation": "Hamburger Tierschutzverein von 1841 e.V.",
+      "beschreibung": "Im Tierheim des Hamburger Tierschutzvereins hilfst du Hunden bei der Sozialisierung, leistest Katzen Gesellschaft oder packst bei Veranstaltungen an. Du trägst dazu bei, dass Tiere auf ihr neues Zuhause vorbereitet werden – und spürst sofort, was dein Einsatz bewirkt.",
+      "themen": [
+        "umwelt"
+      ],
+      "taetigkeit": [
+        "praktisch",
+        "menschen"
+      ],
+      "zielgruppen": [],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "mind. 1× pro Woche, Schichten Di–So",
+      "ort": "Hamburg",
+      "bezirk": "Hamburg-Mitte",
+      "website": "https://www.hamburger-tierschutzverein.de/spenden-und-helfen/ehrenamt",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "tierschutzverein-lunebur",
+      "titel": "Tieren Hoffnung schenken – Tierheim Lüneburg",
+      "organisation": "Tierschutzverein Lüneburg e.V.",
+      "beschreibung": "Beim Tierschutzverein Lüneburg begleitest du Hunde beim Gassigehen, sorgst für die Sozialisierung von Katzen oder kümmerst dich um Außenanlagen und Social Media. Das Tierheim nimmt jährlich rund 1.200 Tiere auf – jede helfende Hand zählt.",
+      "themen": [
+        "umwelt"
+      ],
+      "taetigkeit": [
+        "praktisch",
+        "menschen"
+      ],
+      "zielgruppen": [],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Mehrmals pro Woche möglich, feste Trainingszeiten",
+      "ort": "Lüneburg",
+      "bezirk": "Landkreis Lüneburg",
+      "website": "https://www.tierschutzverein-lueneburg.de/spenden-und-helfen/ehrenamtlich-mithelfen/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "johanniter-unfall-hilfe-",
+      "titel": "Sanitätsdienst & Katastrophenschutz",
+      "organisation": "Johanniter-Unfall-Hilfe Regionalverband Hamburg",
+      "beschreibung": "Bei den Johannitern in Hamburg sorgst du als ehrenamtliche:r Helfer:in für medizinische Sicherheit bei Großveranstaltungen, engagierst dich im Bevölkerungsschutz oder wirst Teil der Rettungshundestaffel. Vorkenntnisse sind nicht nötig – du wirst vollständig ausgebildet.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "praktisch",
+        "fachlich",
+        "menschen"
+      ],
+      "zielgruppen": [],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "Regelmäßige Ausbildungsabende und Wochenendeinsätze",
+      "ort": "Hamburg",
+      "bezirk": "Wandsbek",
+      "website": "https://www.johanniter.de/juh/lv-nord/rv-hamburg/so-koennen-sie-bei-uns-in-hamburg-mitmachen/retten-und-helfen/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "gobanyo-ggmbh",
+      "titel": "Mithelfen auf dem Duschbus von GoBanyo",
+      "organisation": "GoBanyo gGmbH",
+      "beschreibung": "Auf dem GoBanyo-Duschbus schenkst du obdachlosen Menschen etwas Selbstverständliches und doch Seltenes: eine warme Dusche und Würde. Du hilfst am Empfang, gibst Pflegeprodukte aus oder reinigst – an einem Schnuppertag lernst du alles, Vorkenntnisse brauchst du keine.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Schichten 8:30–12 oder 12–15:30 Uhr",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://gobanyo.org/",
+      "quelle": "recherchiert"
+    },
+    {
+      "id": "sonnenschein-cafe-gobany",
+      "titel": "Service & Kuchen im Sonnenschein Café",
+      "organisation": "Sonnenschein Café (GoBanyo)",
+      "beschreibung": "Sonntags, wenn viele Hilfsangebote geschlossen haben, öffnet das Sonnenschein Café in Ottensen seine Türen für Menschen mit wenig Geld und ohne festen Wohnsitz. Du kochst Kaffee, schmierst Brote, reichst Kuchen und schenkst vor allem eines: ein offenes Ohr.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Sonntags 12:30–17:30 Uhr",
+      "ort": "Hamburg-Ottensen",
+      "bezirk": "Altona",
+      "website": "https://www.instagram.com/sonnenschein_cafe/",
+      "quelle": "recherchiert"
     }
   ],
   "nutzer": [],
