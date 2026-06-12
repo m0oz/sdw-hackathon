@@ -25,7 +25,22 @@ body{font-family:var(--sdw-font);color:var(--sdw-ink);line-height:1.5;
   background-size:cover;}
 a{color:var(--sdw-teal-d);}
 
-.brand{position:fixed;top:16px;right:24px;z-index:40;background:rgba(255,255,255,.96);
+body{padding-top:34px;}
+.poc-banner{position:fixed;top:0;left:0;right:0;z-index:60;height:34px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--sdw-accent);color:var(--sdw-ink);
+  font-weight:800;font-size:.82rem;letter-spacing:.02em;
+  box-shadow:0 2px 10px rgba(20,40,50,.12);}
+
+.gate-overlay{position:fixed;inset:0;z-index:50;display:flex;align-items:center;
+  justify-content:center;padding:24px;
+  background:linear-gradient(135deg,rgba(26,80,100,.55),rgba(20,40,50,.7));
+  backdrop-filter:blur(4px);}
+.gate-card{max-width:440px;width:100%;}
+.gate-card p{color:var(--sdw-muted);margin:.4rem 0 1.1rem;}
+.gate-error{color:var(--sdw-bad)!important;font-weight:700;margin:.7rem 0 0!important;}
+
+.brand{position:fixed;top:46px;right:24px;z-index:40;background:rgba(255,255,255,.96);
   padding:8px 14px;border-radius:12px;box-shadow:0 4px 16px rgba(20,40,50,.12);}
 .logo{height:48px;width:auto;display:block;}
 .logo-hero{height:110px;width:auto;display:block;margin-bottom:1.4rem;}

@@ -14,16 +14,69 @@ function Brand() {
   );
 }
 
+function PocBanner() {
+  return (
+    <div className="poc-banner">
+      ⚠️ Proof of Concept – Demo-Prototyp, keine echten Daten
+    </div>
+  );
+}
+
+// Einfaches „Mensch?"-Tor: schützt die Demo vor Bots, fragt sdw-Insiderwissen ab.
+function HumanGate({ onPass }) {
+  const [antwort, setAntwort] = useState("");
+  const [fehler, setFehler] = useState(false);
+
+  const pruefen = (e) => {
+    e.preventDefault();
+    const norm = antwort.trim().toLowerCase()
+      .replace(/ä/g, "ae").replace(/ü/g, "ue").replace(/ö/g, "oe").replace(/ß/g, "ss")
+      .replace(/[^a-z]/g, "");
+    if (norm === "fruehjahrsaktion") {
+      onPass();
+    } else {
+      setFehler(true);
+    }
+  };
+
+  return (
+    <div className="gate-overlay">
+      <form className="card teal gate-card" onSubmit={pruefen}>
+        <span className="kicker">Kurze Frage</span>
+        <h3>Bist du ein Mensch?</h3>
+        <p>Wie heißt die jährliche sdw-Aktion für soziales Engagement?</p>
+        <input autoFocus type="text" value={antwort}
+          onChange={(e) => { setAntwort(e.target.value); setFehler(false); }}
+          placeholder="Deine Antwort" />
+        {fehler && <p className="gate-error">Leider nicht richtig – versuch es noch einmal.</p>}
+        <div style={{ marginTop: "1.2rem" }}>
+          <button className="btn" type="submit">Weiter</button>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+// Aus dem Namen wird eine Wegwerf-Adresse erzeugt – wir speichern bewusst
+// keine echten E-Mails (Proof of Concept).
+function bogusEmail(name) {
+  const slug = name.trim().toLowerCase()
+    .replace(/ä/g, "ae").replace(/ü/g, "ue").replace(/ö/g, "oe").replace(/ß/g, "ss")
+    .replace(/[^a-z0-9]+/g, ".").replace(/^\.+|\.+$/g, "") || "gast";
+  return `${slug}@poc.invalid`;
+}
+
 function Login({ onLogin }) {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [laedt, setLaedt] = useState(false);
+
+  const onName = (e) => setName(e.target.value);
 
   const anmelden = async (e) => {
     e.preventDefault();
     setLaedt(true);
     try {
-      const nutzer = await api.login(name, email);
+      const nutzer = await api.login(name, bogusEmail(name));
       onLogin(nutzer);
     } catch {
       alert("Backend nicht erreichbar – läuft uvicorn auf Port 8000?");
@@ -50,18 +103,19 @@ function Login({ onLogin }) {
           <h3>Anmelden</h3>
           <label htmlFor="name">Dein Name</label>
           <input id="name" type="text" required value={name}
-            onChange={(e) => setName(e.target.value)} placeholder="Vorname Nachname" />
-          <label htmlFor="email">E-Mail (wie im Alumniportal)</label>
-          <input id="email" type="email" required value={email}
-            onChange={(e) => setEmail(e.target.value)} placeholder="du@example.org" />
+            onChange={onName} placeholder="Vorname Nachname" />
+          <label htmlFor="email">E-Mail (automatisch erzeugt)</label>
+          <input id="email" type="text" readOnly tabIndex={-1}
+            value={name ? bogusEmail(name) : ""} placeholder="wird automatisch erzeugt" />
           <div style={{ marginTop: "1.4rem" }}>
-            <button className="btn" type="submit" disabled={laedt}>
+            <button className="btn" type="submit" disabled={laedt || !name.trim()}>
               {laedt ? "Anmelden …" : "Mit sdw-Login starten"}
             </button>
           </div>
           <p className="login-hint">
             Demo: Die Anmeldung simuliert das sdw-Alumniportal – es wird kein
-            Passwort geprüft.
+            Passwort geprüft. Wir speichern <strong>keine echten E-Mails</strong>,
+            sondern eine Wegwerf-Adresse.
           </p>
         </form>
       </div>
@@ -146,6 +200,7 @@ function Merkliste({ angebote }) {
 }
 
 export default function App() {
+  const [mensch, setMensch] = useState(() => localStorage.getItem("sdw-mensch") === "ja");
   const [nutzer, setNutzer] = useState(() => {
     const n = localStorage.getItem("sdw-nutzer");
     return n ? JSON.parse(n) : null;
@@ -165,11 +220,28 @@ export default function App() {
       .catch(() => {});
   }, [nutzer, view]);
 
+  if (!mensch) {
+    return (
+      <>
+        <PocBanner />
+        <HumanGate onPass={() => {
+          localStorage.setItem("sdw-mensch", "ja");
+          setMensch(true);
+        }} />
+      </>
+    );
+  }
+
   if (!nutzer) {
-    return <Login onLogin={(n) => {
-      localStorage.setItem("sdw-nutzer", JSON.stringify(n));
-      setNutzer(n);
-    }} />;
+    return (
+      <>
+        <PocBanner />
+        <Login onLogin={(n) => {
+          localStorage.setItem("sdw-nutzer", JSON.stringify(n));
+          setNutzer(n);
+        }} />
+      </>
+    );
   }
 
   const merken = async (angebot, n) => {
@@ -186,6 +258,7 @@ export default function App() {
 
   return (
     <>
+      <PocBanner />
       <Brand />
       <div className="shell">
         <nav className="nav">

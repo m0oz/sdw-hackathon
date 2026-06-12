@@ -1,18 +1,21 @@
-# sdw Alumni – Hackathon: Agenten, Harnesses & soziales Engagement
+# sdw Hackathon – Finde dein Ehrenamt
 
 Materialien für einen Workshop + Mini-Hackathon der **sdw Alumni** („Netzwerk fürs Leben").
 Die Idee: gemeinsam verstehen, wie aus einem Sprachmodell ein handelnder **Agent** wird –
-und das Gelernte sofort nutzen, um in wenigen Stunden etwas **Gemeinnütziges** zu bauen.
+und das Gelernte sofort nutzen, um etwas **Gemeinnütziges** zu bauen.
 
-Genau das ist passiert. Hier ist das Ergebnis.
+Das Ergebnis unten wurde in nur **45 Minuten mit KI** gebaut. Hier ist es.
 
 ---
 
 ## Das Ergebnis: „EhrenMoin – Ehrenamt in Hamburg"
 
-> **Entstanden beim sdw Mini-Hackathon am 11. Juni 2026.** In wenigen Stunden mit
-> Claude Code gebaut – als Beispiel dafür, wie aus einem Agenten ein echtes,
-> nützliches Produkt für die Community wird.
+> **Entstanden beim sdw Mini-Hackathon am 11. Juni 2026 – in nur 45 Minuten mit KI
+> (Claude Code) gebaut.** Ein Beispiel dafür, wie aus einem Agenten in kürzester
+> Zeit ein echtes, nützliches Produkt für die Community wird.
+>
+> Insgesamt entstanden an diesem Tag **vier Prototypen – alle gleichermaßen
+> beeindruckend**. Stellvertretend zeigen wir hier einen davon.
 
 ![EhrenMoin – Matching-Ergebnis: „Diese 4 Engagements passen zu dir"](pitch-assets/03-ergebnis.png)
 
