@@ -1,0 +1,618 @@
+{
+  "angebote": [
+    {
+      "id": "studienkompass",
+      "titel": "Mentor:in beim Studienkompass",
+      "organisation": "Studienkompass (sdw)",
+      "beschreibung": "Begleite Schüler:innen aus Familien ohne akademische Erfahrung drei Jahre lang auf dem Weg zu Studium oder Ausbildung. Das sdw-eigene Programm – ideal, um deine eigene Förder-Erfahrung weiterzugeben.",
+      "themen": [
+        "bildung"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "kinder"
+      ],
+      "format": "hybrid",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 2–4 Std./Monat, 3 Jahre Begleitung",
+      "ort": "Hamburg & online",
+      "bezirk": "Stadtweit",
+      "website": "https://www.studienkompass.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "arbeiterkind",
+      "titel": "Mentor:in bei ArbeiterKind.de Hamburg",
+      "organisation": "ArbeiterKind.de",
+      "beschreibung": "Ermutige und begleite Studierende der ersten Generation – in der Hamburger Ortsgruppe, an Schulinfoabenden oder digital im Netzwerk.",
+      "themen": [
+        "bildung"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "jugendliche",
+        "erwachsene"
+      ],
+      "format": "hybrid",
+      "zeit": [
+        "flexibel",
+        "regelmaessig"
+      ],
+      "zeitumfang": "flexibel, ab 2 Std./Monat",
+      "ort": "Hamburg & online",
+      "bezirk": "Stadtweit",
+      "website": "https://www.arbeiterkind.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "rock-your-life",
+      "titel": "1:1-Mentoring für Jugendliche",
+      "organisation": "ROCK YOUR LIFE! Hamburg",
+      "beschreibung": "Zwei Jahre lang begleitest du eine:n Schüler:in einer Stadtteilschule auf dem Weg in den Beruf – mit Trainings, Netzwerk und persönlicher Beziehung.",
+      "themen": [
+        "bildung"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "jugendliche"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 2 Treffen/Monat, 2 Jahre",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://hamburg.rockyourlife.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "balu-und-du",
+      "titel": "Balu für ein Grundschulkind",
+      "organisation": "Balu und Du",
+      "beschreibung": "Als „Balu\" triffst du dich ein Jahr lang wöchentlich mit einem Grundschulkind („Mogli\") – spielen, entdecken, Vertrauen aufbauen.",
+      "themen": [
+        "bildung",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "kinder"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "1–3 Std./Woche, 1 Jahr",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.balu-und-du.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "mentor-leselernhelfer",
+      "titel": "Lesementor:in an einer Hamburger Schule",
+      "organisation": "MENTOR – Die Leselernhelfer Hamburg e.V.",
+      "beschreibung": "Eine Stunde pro Woche liest du mit einem Kind, das Unterstützung beim Lesen braucht – 1:1, an einer Schule in deiner Nähe.",
+      "themen": [
+        "bildung"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "kinder"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "1 Std./Woche, mind. 1 Jahr",
+      "ort": "Schulen in ganz Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.mentor-hamburg.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "hacker-school",
+      "titel": "IT-Kurse für Kids geben (Inspirer)",
+      "organisation": "Hacker School",
+      "beschreibung": "Zeige Kindern und Jugendlichen an einem Wochenende oder in Schulklassen, wie Programmieren funktioniert – auch ohne Lehrerfahrung, gern remote.",
+      "themen": [
+        "bildung",
+        "digitales"
+      ],
+      "taetigkeit": [
+        "fachlich",
+        "menschen"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "jugendliche"
+      ],
+      "format": "hybrid",
+      "zeit": [
+        "einmalig",
+        "flexibel"
+      ],
+      "zeitumfang": "z. B. 2×4 Std. an einem Wochenende",
+      "ort": "Hamburg & online",
+      "bezirk": "Stadtweit",
+      "website": "https://hacker-school.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "joblinge",
+      "titel": "Mentor:in für den Berufseinstieg",
+      "organisation": "JOBLINGE Hanse",
+      "beschreibung": "Begleite eine:n junge:n Erwachsene:n ohne Ausbildungsplatz sechs Monate lang in die Ausbildung – mit deiner Berufserfahrung als Kompass.",
+      "themen": [
+        "bildung",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "jugendliche"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 1–2 Std./Woche, 6 Monate",
+      "ort": "Hamburg",
+      "bezirk": "Mitte",
+      "website": "https://www.joblinge.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "weichenstellung",
+      "titel": "Mentor:in bei WEICHENSTELLUNG",
+      "organisation": "ZEIT-Stiftung Bucerius",
+      "beschreibung": "Als Studierende:r begleitest du Viertklässler:innen beim Übergang auf die weiterführende Schule – Lernförderung und kulturelle Ausflüge inklusive.",
+      "themen": [
+        "bildung"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "kinder"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 4 Std./Woche (vergütete Aufwandsentschädigung)",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.weichenstellung.info",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "dialog-in-deutsch",
+      "titel": "Deutsch-Gesprächsgruppe leiten",
+      "organisation": "Dialog in Deutsch (Bücherhallen Hamburg)",
+      "beschreibung": "Leite ehrenamtlich eine offene Gesprächsgruppe für Zugewanderte in einer Bücherhalle – einfach Deutsch sprechen, ohne Unterrichtsvorbereitung.",
+      "themen": [
+        "integration",
+        "bildung"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "1 Std./Woche",
+      "ort": "Bücherhallen in ganz Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.buecherhallen.de/dialog-in-deutsch.html",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "redi-school",
+      "titel": "Tech-Kurse für Migrant:innen unterrichten",
+      "organisation": "ReDI School of Digital Integration Hamburg",
+      "beschreibung": "Unterrichte abends Coding, Datenanalyse oder digitale Grundlagen für Menschen mit Flucht- oder Migrationsgeschichte – im Team, Lehrplan vorhanden.",
+      "themen": [
+        "integration",
+        "digitales",
+        "bildung"
+      ],
+      "taetigkeit": [
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "hybrid",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "1 Abend/Woche pro Semester",
+      "ort": "Hamburg & online",
+      "bezirk": "Mitte",
+      "website": "https://www.redi-school.org/hamburg",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "hanseatic-help",
+      "titel": "Spenden sortieren bei Hanseatic Help",
+      "organisation": "Hanseatic Help e.V.",
+      "beschreibung": "Sortiere in der Halle in Altona Kleider- und Sachspenden für Menschen in Not – einfach vorbeikommen, jede helfende Hand zählt.",
+      "themen": [
+        "soziales",
+        "integration"
+      ],
+      "taetigkeit": [
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "einmalig",
+        "flexibel"
+      ],
+      "zeitumfang": "Schichten nach Wahl, auch spontan",
+      "ort": "Große Elbstraße, Altona",
+      "bezirk": "Altona",
+      "website": "https://www.hanseatic-help.org",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "hamburger-tafel",
+      "titel": "Lebensmittel retten und verteilen",
+      "organisation": "Hamburger Tafel e.V.",
+      "beschreibung": "Hilf beim Sortieren, Fahren oder Ausgeben von geretteten Lebensmitteln an Bedürftige – logistisch, praktisch, direkt wirksam.",
+      "themen": [
+        "soziales",
+        "umwelt"
+      ],
+      "taetigkeit": [
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "flexibel",
+        "regelmaessig"
+      ],
+      "zeitumfang": "Schichten ca. 3–4 Std.",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.hamburger-tafel.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "mitternachtsbus",
+      "titel": "Mitfahren im Mitternachtsbus",
+      "organisation": "Diakonie Hamburg",
+      "beschreibung": "Nachts mit dem Bus durch die Stadt: heiße Getränke, Schlafsäcke und ein offenes Ohr für obdachlose Menschen.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "Nachtschichten ca. 19–24 Uhr",
+      "ort": "Innenstadt",
+      "bezirk": "Mitte",
+      "website": "https://www.diakonie-hamburg.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "telefonseelsorge",
+      "titel": "Zuhören bei der TelefonSeelsorge",
+      "organisation": "TelefonSeelsorge Hamburg",
+      "beschreibung": "Nach einer fundierten Ausbildung bist du am Telefon für Menschen in Krisen da – anonym, rund um die Uhr, getragen von einem starken Team.",
+      "themen": [
+        "soziales",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 12–15 Std./Monat nach Ausbildung",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.telefonseelsorge-hamburg.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "silbernetz",
+      "titel": "Telefonfreund:in für einsame Ältere",
+      "organisation": "Silbernetz e.V.",
+      "beschreibung": "Einmal pro Woche telefonierst du mit einem älteren Menschen, der sich einsam fühlt – komplett von zu Hause aus möglich.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "senioren"
+      ],
+      "format": "remote",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "ca. 1 Std./Woche",
+      "ort": "Remote (telefonisch)",
+      "bezirk": "Remote",
+      "website": "https://www.silbernetz.org",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "kulturisten-hoch2",
+      "titel": "Kulturbegleitung für Senior:innen",
+      "organisation": "KULTURISTENHOCH2",
+      "beschreibung": "Du (18–35) begleitest eine:n Senior:in mit kleinem Budget zu Konzerten, Theater oder Museen – Tickets gibt's gratis dazu.",
+      "themen": [
+        "kultur",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen"
+      ],
+      "zielgruppen": [
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "flexibel"
+      ],
+      "zeitumfang": "1–2 Abende/Monat",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://kulturistenhoch2.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "medienboten",
+      "titel": "Medienbote:in der Bücherhallen",
+      "organisation": "Bücherhallen Hamburg",
+      "beschreibung": "Bring Bücher und Hörbücher zu Menschen, die nicht mehr selbst in die Bücherhalle kommen können – und bleib für ein Gespräch.",
+      "themen": [
+        "kultur",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "senioren"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "ca. 2 Std. alle 2 Wochen",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.buecherhallen.de/medienboten.html",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "nabu-hamburg",
+      "titel": "Praktischer Naturschutz mit dem NABU",
+      "organisation": "NABU Hamburg",
+      "beschreibung": "Biotope pflegen, Bäume pflanzen, Amphibien schützen – draußen aktiv bei Pflegeeinsätzen in den Hamburger Naturschutzgebieten.",
+      "themen": [
+        "umwelt"
+      ],
+      "taetigkeit": [
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "einmalig",
+        "flexibel"
+      ],
+      "zeitumfang": "Einsätze meist samstags, 3–5 Std.",
+      "ort": "Naturschutzgebiete in Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://hamburg.nabu.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "foodsharing",
+      "titel": "Lebensmittel retten mit foodsharing",
+      "organisation": "foodsharing Hamburg",
+      "beschreibung": "Hole überschüssige Lebensmittel bei Betrieben ab und verteile sie über Fairteiler im Stadtteil – flexibel per App organisiert.",
+      "themen": [
+        "umwelt",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "flexibel"
+      ],
+      "zeitumfang": "Abholungen ab 30 Min., selbstbestimmt",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://foodsharing.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "hamburg-raeumt-auf",
+      "titel": "Mitmachen bei „Hamburg räumt auf!“",
+      "organisation": "Stadtreinigung Hamburg",
+      "beschreibung": "Einmal im Jahr im Frühjahr: Sammle mit Tausenden Hamburger:innen Müll in Parks, an der Elbe oder im eigenen Viertel – perfekt als Team-Aktion.",
+      "themen": [
+        "umwelt"
+      ],
+      "taetigkeit": [
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "erwachsene",
+        "kinder"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "einmalig"
+      ],
+      "zeitumfang": "1 Vormittag im Jahr",
+      "ort": "Ganz Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.stadtreinigung.hamburg",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "gute-tat",
+      "titel": "Einmalige Einsätze über Gute-Tat",
+      "organisation": "Stiftung Gute-Tat Hamburg",
+      "beschreibung": "Projektbörse für punktuelles Engagement: Ausflüge begleiten, Feste unterstützen, handwerklich helfen – ohne langfristige Bindung.",
+      "themen": [
+        "soziales"
+      ],
+      "taetigkeit": [
+        "praktisch",
+        "menschen"
+      ],
+      "zielgruppen": [
+        "erwachsene",
+        "senioren",
+        "kinder"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "einmalig"
+      ],
+      "zeitumfang": "einzelne Einsätze, 2–6 Std.",
+      "ort": "Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.gute-tat.de",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "youvo",
+      "titel": "Kreativ-Projekte für soziale Organisationen",
+      "organisation": "youvo.org",
+      "beschreibung": "Unterstütze NGOs remote mit deinen Skills in Design, Text, Foto, Video oder Kommunikation – projektbasiert und zeitlich überschaubar.",
+      "themen": [
+        "digitales",
+        "soziales"
+      ],
+      "taetigkeit": [
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "remote",
+      "zeit": [
+        "flexibel",
+        "einmalig"
+      ],
+      "zeitumfang": "projektweise, oft 5–20 Std. gesamt",
+      "ort": "Remote",
+      "bezirk": "Remote",
+      "website": "https://www.youvo.org",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "correlaid",
+      "titel": "Data Science für den guten Zweck",
+      "organisation": "CorrelAid e.V.",
+      "beschreibung": "Setze mit anderen Datenexpert:innen ehrenamtliche Data-Science-Projekte für gemeinnützige Organisationen um – remote im Projektteam.",
+      "themen": [
+        "digitales"
+      ],
+      "taetigkeit": [
+        "fachlich"
+      ],
+      "zielgruppen": [
+        "erwachsene"
+      ],
+      "format": "remote",
+      "zeit": [
+        "regelmaessig",
+        "flexibel"
+      ],
+      "zeitumfang": "ca. 2–4 Std./Woche pro Projekt",
+      "ort": "Remote",
+      "bezirk": "Remote",
+      "website": "https://www.correlaid.org",
+      "quelle": "kuratiert"
+    },
+    {
+      "id": "sportbund",
+      "titel": "Sport & Bewegung: Übungsleitung im Verein",
+      "organisation": "Hamburger Sportbund (HSB)",
+      "beschreibung": "Hamburger Sportvereine suchen laufend Trainer:innen, Übungsleiter:innen und Helfer:innen – vom Kinderturnen bis zum Lauftreff.",
+      "themen": [
+        "kultur",
+        "gesundheit"
+      ],
+      "taetigkeit": [
+        "menschen",
+        "praktisch"
+      ],
+      "zielgruppen": [
+        "kinder",
+        "erwachsene"
+      ],
+      "format": "vor_ort",
+      "zeit": [
+        "regelmaessig"
+      ],
+      "zeitumfang": "1–3 Std./Woche",
+      "ort": "Vereine in ganz Hamburg",
+      "bezirk": "Stadtweit",
+      "website": "https://www.hamburger-sportbund.de",
+      "quelle": "kuratiert"
+    }
+  ],
+  "nutzer": [],
+  "interessen": [],
+  "gruppen": []
+}

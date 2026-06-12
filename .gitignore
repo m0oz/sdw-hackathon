@@ -20,3 +20,6 @@ node_modules/
 dist/
 build/
 .vite/
+
+# Bundled artifacts (keep local, don't track)
+*.zip
