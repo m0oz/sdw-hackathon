@@ -1,3 +1,6 @@
+import hashlib
+import hmac
+import os
 import random
 import string
 import uuid
@@ -8,17 +11,68 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request
+from starlette.responses import JSONResponse
 
 import db
 
 app = FastAPI(title="sdw Alumni – Ehrenamt in Hamburg")
 
+# ---------------------------------------------------------------------------
+# „Bist du ein Mensch?"-Tor – serverseitig erzwungen (ein reiner Frontend-Check
+# liesse sich per DevTools umgehen). Der Client beantwortet die sdw-Frage über
+# POST /api/gate, erhält ein Token und schickt es als X-Gate-Token-Header bei
+# jedem weiteren /api-Aufruf mit. Das Token ist ein HMAC über ein Server-Secret
+# – nicht zur Antwort zurückrechenbar und stabil über Neustarts hinweg.
+# ---------------------------------------------------------------------------
+
+GATE_ANSWER = "fruehjahrsaktion"  # normalisiert, siehe _normalize
+GATE_SECRET = os.environ.get("GATE_SECRET", "sdw-fruehjahrsaktion-poc")
+GATE_TOKEN = hmac.new(GATE_SECRET.encode(), b"gate-passed", hashlib.sha256).hexdigest()
+
+
+def _normalize(text: str) -> str:
+    text = text.strip().lower()
+    for a, b in (("ä", "ae"), ("ü", "ue"), ("ö", "oe"), ("ß", "ss")):
+        text = text.replace(a, b)
+    return "".join(c for c in text if c.isalpha())
+
+
+async def gate_guard(request: Request, call_next):
+    path = request.url.path
+    geschuetzt = path.startswith("/api/") and path != "/api/gate"
+    if geschuetzt and request.method != "OPTIONS":
+        if request.headers.get("x-gate-token") != GATE_TOKEN:
+            return JSONResponse(
+                {"detail": "Bitte zuerst die Mensch-Frage beantworten."},
+                status_code=401,
+            )
+    return await call_next(request)
+
+
+# Reihenfolge zählt: CORS wird zuletzt hinzugefügt und ist damit die äusserste
+# Schicht – so bekommen auch 401-Antworten des Tors die CORS-Header.
+app.add_middleware(BaseHTTPMiddleware, dispatch=gate_guard)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # fine for a hackathon; tighten for real use
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+class GateRequest(BaseModel):
+    antwort: str
+
+
+@app.post("/api/gate")
+def gate(req: GateRequest):
+    """Prüft die Mensch-Frage und gibt bei korrekter Antwort ein Token aus."""
+    if _normalize(req.antwort) == GATE_ANSWER:
+        return {"token": GATE_TOKEN}
+    raise HTTPException(403, "Leider nicht richtig – versuch es noch einmal.")
+
 
 DEFAULT = {"angebote": [], "nutzer": [], "interessen": [], "gruppen": []}
 

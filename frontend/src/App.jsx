@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { api } from "./api.js";
+import { api, getToken } from "./api.js";
 import { THEMEN, FORMATE, ZEITEN } from "./labels.js";
 import Quiz from "./components/Quiz.jsx";
 import Eintragen from "./components/Eintragen.jsx";
@@ -22,20 +22,29 @@ function PocBanner() {
   );
 }
 
-// Einfaches „Mensch?"-Tor: schützt die Demo vor Bots, fragt sdw-Insiderwissen ab.
+// „Mensch?"-Tor: schützt die Demo vor Bots. Die Antwort wird serverseitig
+// geprüft (api.gate) – ein reiner Frontend-Check liesse sich umgehen. Bei
+// Erfolg legt das Backend ein Token ab, das alle weiteren Aufrufe absichert.
 function HumanGate({ onPass }) {
   const [antwort, setAntwort] = useState("");
   const [fehler, setFehler] = useState(false);
+  const [laedt, setLaedt] = useState(false);
 
-  const pruefen = (e) => {
+  const pruefen = async (e) => {
     e.preventDefault();
-    const norm = antwort.trim().toLowerCase()
-      .replace(/ä/g, "ae").replace(/ü/g, "ue").replace(/ö/g, "oe").replace(/ß/g, "ss")
-      .replace(/[^a-z]/g, "");
-    if (norm === "fruehjahrsaktion") {
+    setLaedt(true);
+    setFehler(false);
+    try {
+      await api.gate(antwort);
       onPass();
-    } else {
-      setFehler(true);
+    } catch (err) {
+      setFehler(
+        err.message === "GATE_WRONG"
+          ? "Leider nicht richtig – versuch es noch einmal."
+          : "Backend nicht erreichbar – läuft uvicorn auf Port 8000?"
+      );
+    } finally {
+      setLaedt(false);
     }
   };
 
@@ -48,9 +57,11 @@ function HumanGate({ onPass }) {
         <input autoFocus type="text" value={antwort}
           onChange={(e) => { setAntwort(e.target.value); setFehler(false); }}
           placeholder="Deine Antwort" />
-        {fehler && <p className="gate-error">Leider nicht richtig – versuch es noch einmal.</p>}
+        {fehler && <p className="gate-error">{fehler}</p>}
         <div style={{ marginTop: "1.2rem" }}>
-          <button className="btn" type="submit">Weiter</button>
+          <button className="btn" type="submit" disabled={laedt || !antwort.trim()}>
+            {laedt ? "Prüfe …" : "Weiter"}
+          </button>
         </div>
       </form>
     </div>
@@ -200,7 +211,7 @@ function Merkliste({ angebote }) {
 }
 
 export default function App() {
-  const [mensch, setMensch] = useState(() => localStorage.getItem("sdw-mensch") === "ja");
+  const [mensch, setMensch] = useState(() => Boolean(getToken()));
   const [nutzer, setNutzer] = useState(() => {
     const n = localStorage.getItem("sdw-nutzer");
     return n ? JSON.parse(n) : null;
@@ -224,10 +235,7 @@ export default function App() {
     return (
       <>
         <PocBanner />
-        <HumanGate onPass={() => {
-          localStorage.setItem("sdw-mensch", "ja");
-          setMensch(true);
-        }} />
+        <HumanGate onPass={() => setMensch(true)} />
       </>
     );
   }
