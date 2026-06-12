@@ -32,6 +32,18 @@ body{padding-top:34px;}
   font-weight:800;font-size:.82rem;letter-spacing:.02em;
   box-shadow:0 2px 10px rgba(20,40,50,.12);}
 
+.weck-banner{position:fixed;top:34px;left:0;right:0;z-index:59;
+  display:flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:.55rem 1rem;font-size:.92rem;text-align:center;
+  background:var(--sdw-soft);color:var(--sdw-ink);
+  border-bottom:1px solid var(--sdw-line);box-shadow:0 4px 14px rgba(20,40,50,.08);}
+.weck-banner.wach{background:color-mix(in srgb,var(--sdw-good) 12%,var(--sdw-white));
+  color:var(--sdw-good);font-weight:700;}
+.weck-spinner{width:15px;height:15px;flex:none;border-radius:50%;
+  border:2px solid var(--sdw-teal);border-top-color:transparent;
+  animation:weck-drehen .8s linear infinite;}
+@keyframes weck-drehen{to{transform:rotate(360deg)}}
+
 .gate-overlay{position:fixed;inset:0;z-index:50;display:flex;align-items:center;
   justify-content:center;padding:24px;
   background:linear-gradient(135deg,rgba(26,80,100,.55),rgba(20,40,50,.7));

@@ -41,7 +41,9 @@ def _normalize(text: str) -> str:
 
 async def gate_guard(request: Request, call_next):
     path = request.url.path
-    geschuetzt = path.startswith("/api/") and path != "/api/gate"
+    # /api/health bleibt offen: das Frontend pingt ihn beim Laden, um den
+    # schlafenden Render-Dienst zu wecken — noch vor der Mensch-Frage.
+    geschuetzt = path.startswith("/api/") and path not in ("/api/gate", "/api/health")
     if geschuetzt and request.method != "OPTIONS":
         if request.headers.get("x-gate-token") != GATE_TOKEN:
             return JSONResponse(
@@ -60,6 +62,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.get("/api/health")
+def health():
+    """Wach-Check fürs Frontend; der Aufruf selbst weckt den Render-Dienst."""
+    return {"status": "ok"}
 
 
 class GateRequest(BaseModel):

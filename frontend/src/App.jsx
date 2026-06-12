@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { api, getToken } from "./api.js";
 import { THEMEN, FORMATE, ZEITEN } from "./labels.js";
 import Quiz from "./components/Quiz.jsx";
@@ -22,6 +22,77 @@ function PocBanner() {
   );
 }
 
+// Fehlertext, wenn das Backend nicht antwortet: lokal ist meist uvicorn nicht
+// gestartet, in der Demo schläft eher noch der kostenlose Render-Dienst.
+const OFFLINE_MSG = import.meta.env.DEV
+  ? "Backend nicht erreichbar – läuft uvicorn auf Port 8000?"
+  : "Der Demo-Server fährt wohl noch hoch – bitte einen Moment warten und dann noch einmal versuchen.";
+
+// Pingt /api/health, bis das Backend antwortet. Der erste Ping weckt den
+// schlafenden Render-Dienst (kostenloses Tier) – so startet er schon beim
+// Laden der Seite statt erst beim ersten Klick. Liefert den Wach-Status und
+// die bisher verstrichene Wartezeit in Sekunden.
+function useBackendWach() {
+  const [wach, setWach] = useState(false);
+  const [sekunden, setSekunden] = useState(0);
+
+  useEffect(() => {
+    let aktiv = true;
+    const start = Date.now();
+    const zaehler = setInterval(
+      () => setSekunden(Math.round((Date.now() - start) / 1000)),
+      1000
+    );
+    (async () => {
+      while (aktiv && !(await api.health())) {
+        await new Promise((r) => setTimeout(r, 3000));
+      }
+      clearInterval(zaehler);
+      if (aktiv) setWach(true);
+    })();
+    return () => {
+      aktiv = false;
+      clearInterval(zaehler);
+    };
+  }, []);
+
+  return { wach, sekunden };
+}
+
+// Schmale Statusleiste unter dem PoC-Banner, solange der Server hochfährt.
+// Ein warmer Server antwortet sofort – dann erscheint sie gar nicht erst.
+function WeckBanner({ wach, sekunden }) {
+  const warLangsam = useRef(false);
+  if (!wach && sekunden >= 2) warLangsam.current = true;
+  const [ausgeblendet, setAusgeblendet] = useState(false);
+
+  useEffect(() => {
+    if (!wach) return;
+    const t = setTimeout(() => setAusgeblendet(true), 3000);
+    return () => clearTimeout(t);
+  }, [wach]);
+
+  if (!warLangsam.current || ausgeblendet) return null;
+
+  if (wach) {
+    return (
+      <div className="weck-banner wach" role="status">
+        ✓ Der Server ist bereit – los geht's!
+      </div>
+    );
+  }
+  return (
+    <div className="weck-banner" role="status">
+      <span className="weck-spinner" aria-hidden="true" />
+      <span>
+        <strong>Der Demo-Server wird gerade geweckt</strong> – kostenloses
+        Hosting, der erste Start kann bis zu einer Minute dauern
+        {sekunden >= 5 ? ` (${sekunden} s)` : ""} …
+      </span>
+    </div>
+  );
+}
+
 // „Mensch?"-Tor: schützt die Demo vor Bots. Die Antwort wird serverseitig
 // geprüft (api.gate) – ein reiner Frontend-Check liesse sich umgehen. Bei
 // Erfolg legt das Backend ein Token ab, das alle weiteren Aufrufe absichert.
@@ -41,7 +112,7 @@ function HumanGate({ onPass }) {
       setFehler(
         err.message === "GATE_WRONG"
           ? "Leider nicht richtig – versuch es noch einmal."
-          : "Backend nicht erreichbar – läuft uvicorn auf Port 8000?"
+          : OFFLINE_MSG
       );
     } finally {
       setLaedt(false);
@@ -91,7 +162,7 @@ function Login({ onLogin }) {
       const nutzer = await api.login(name, bogusEmail(name));
       onLogin(nutzer);
     } catch {
-      alert("Backend nicht erreichbar – läuft uvicorn auf Port 8000?");
+      alert(OFFLINE_MSG);
     } finally {
       setLaedt(false);
     }
@@ -221,6 +292,7 @@ export default function App() {
   const [ergebnisse, setErgebnisse] = useState(null);
   const [gemerkt, setGemerkt] = useState(new Set());
   const [merkliste, setMerkliste] = useState([]);
+  const backend = useBackendWach();
 
   useEffect(() => {
     if (!nutzer) return;
@@ -236,6 +308,7 @@ export default function App() {
     return (
       <>
         <PocBanner />
+        <WeckBanner {...backend} />
         <HumanGate onPass={() => setMensch(true)} />
       </>
     );
@@ -245,6 +318,7 @@ export default function App() {
     return (
       <>
         <PocBanner />
+        <WeckBanner {...backend} />
         <Login onLogin={(n) => {
           localStorage.setItem("sdw-nutzer", JSON.stringify(n));
           setNutzer(n);
@@ -268,6 +342,7 @@ export default function App() {
   return (
     <>
       <PocBanner />
+      <WeckBanner {...backend} />
       <Brand />
       <div className="shell">
         <nav className="nav">

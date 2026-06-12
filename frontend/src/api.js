@@ -37,6 +37,21 @@ const post = (path, body) =>
   }).then(json);
 
 export const api = {
+  // Wach-Check ohne Token: weckt den schlafenden Render-Dienst. Kurzer Timeout,
+  // damit der Aufrufer in einer Schleife erneut pingen kann, solange der
+  // Dienst noch hochfährt.
+  health: async () => {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 5000);
+    try {
+      const r = await fetch(`${BASE}/api/health`, { signal: ctrl.signal });
+      return r.ok;
+    } catch {
+      return false;
+    } finally {
+      clearTimeout(timer);
+    }
+  },
   // Mensch-Frage prüfen; bei Erfolg Token speichern. Wirft bei falscher Antwort.
   gate: async (antwort) => {
     const r = await fetch(`${BASE}/api/gate`, {
