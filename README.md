@@ -66,13 +66,29 @@ open praesentation.html        # macOS – oder die Datei einfach doppelklicken
 
 ## Worum ging es beim Mini-Hackathon?
 
-Die Aufgabe: mit einem Agenten (z. B. Claude Code) in kurzer Zeit etwas Echtes bauen.
-
-- **Option A – Engagement-Portal:** eine Website, die Wege zum sozialen Engagement
-  entdeckbar macht (genau das ist „EhrenMoin" geworden).
-- **Option B – Initiative-Website:** ein Auftritt für eine soziale Initiative eurer Wahl.
+Die Aufgabe: mit einem Agenten (z. B. Claude Code) in kurzer Zeit ein
+**Engagement-Portal** bauen – eine Website, die Wege zum sozialen Engagement
+entdeckbar macht. Genau das ist „EhrenMoin" geworden.
 
 Ablauf: **Team & Idee (5 Min) → Plan → Bauen → 2-Min-Pitch.**
+
+### Vorbereitete Skills
+
+Damit die Teams nicht bei null starten mussten, lagen im Repo vier vorbereitete
+**Claude-Code-Skills** – wiederverwendbare Bauanleitungen, die der Agent bei
+Bedarf selbst heranzieht:
+
+- **`hackathon-prototype`** – erzeugt in Minuten ein lauffähiges Grundgerüst:
+  FastAPI-Backend mit einer JSON-Datei als Datenbank plus React-Frontend.
+- **`sdw-frontend`** – sorgt dafür, dass jede Oberfläche automatisch im
+  sdw-Alumni-Look entsteht (Farben, Logo, Typografie, warme deutsche Ansprache).
+- **`ngrok-share`** – macht die lokal laufende App mit einem Satz öffentlich
+  erreichbar, z. B. fürs Testen auf dem Handy oder den Pitch.
+- **`stock-image`** – findet freie Fotos über die Pexels-API, statt graue
+  Platzhalter zu verwenden.
+
+So konnten sich die Teams auf die eigentliche Idee konzentrieren – Gerüst,
+Branding und Teilen übernahm der Agent.
 
 ---
 
@@ -125,13 +141,9 @@ cd frontend && npm install && npm run dev   # http://localhost:5173
 
 ### Skills
 
-Projektlokale Claude-Code-Skills, die beim schnellen Bauen halfen. Nach Änderungen
-`/reload-skills` ausführen.
-
-- **`sdw-frontend`** – UI im sdw-Alumni-Corporate-Design (Farben, Typografie, Tonalität).
-- **`hackathon-prototype`** – scaffoldet FastAPI-Backend (JSON-Datei) + React-Frontend.
-- **`ngrok-share`** – macht die lokale App über ngrok öffentlich erreichbar.
-- **`stock-image`** – findet freie Fotos über die Pexels-API.
+Die vier projektlokalen Skills in `.claude/skills/` sind oben unter
+[„Vorbereitete Skills"](#vorbereitete-skills) beschrieben. Nach Änderungen an
+einer `SKILL.md` in Claude Code `/reload-skills` ausführen.
 
 ### Einrichtung & Teilen
 
