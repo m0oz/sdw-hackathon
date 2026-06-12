@@ -43,6 +43,16 @@ jobs:
           VITE_API_URL: ${{ vars.VITE_API_URL }}
         # base muss dem Repo-Namen entsprechen (Projektseite: user.github.io/<repo>/).
         run: npx vite build --base=/sdw-hackathon/
+      - name: Statische Seiten beilegen (praesentation.html, pitch.html)
+        # Beide Decks referenzieren nur relative Pfade — Ordnerstruktur 1:1 übernehmen.
+        # assets/ wird in das von Vite erzeugte dist/assets/ gemerged (Dateinamen
+        # kollidieren nicht, Vite hasht seine Bundles).
+        run: |
+          cp praesentation.html pitch.html frontend/dist/
+          cp -R assets/. frontend/dist/assets/
+          cp -R pitch-assets frontend/dist/
+          mkdir -p frontend/dist/frontend/public
+          cp frontend/public/ehrenmoin-logo.svg frontend/dist/frontend/public/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: frontend/dist
